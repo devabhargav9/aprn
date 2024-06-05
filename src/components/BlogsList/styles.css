@@ -1,0 +1,63 @@
+.blogsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.headerText {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.76px;
+  text-align: left;
+  color: #010101;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.aprn {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.76px;
+  text-align: left;
+  color: #002699;
+}
+
+.readMore {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.44px;
+  text-align: left;
+  color: #002699;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 14px;
+  height: 14px;
+  padding-left: 10px;
+}
+
+.blogCard {
+  width: 327px;
+  border-radius: 12px;
+}
+
+.blogTitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.16px;
+  text-align: left;
+  color: #010101;
+  padding: 16px 0px 10px 0px;
+}
+
+.blogSubText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #505050;
+  padding-bottom: 10px;
+}

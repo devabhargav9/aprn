@@ -1,0 +1,156 @@
+.footerContainer {
+  display: flex;
+  align-items: center;
+  position: relative; 
+}
+
+.astronautIcon {
+  height: 462px;
+  width: -webkit-fill-available;
+}
+
+.contactUs {
+  position: absolute;
+  top: 7%;
+  left: 60%;
+  width: 30%;
+  padding: 20px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.readyText {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77.76px;
+  text-align: left;
+}
+
+.readyTextStart {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77.76px;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+.readyDesc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.emailContainer {
+  margin-top: 30px;
+  padding: 8px 8px 8px 16px;
+  border-radius: 37px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid #ffffff6b;
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+input[type="email"]::placeholder {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.44px;
+  text-align: left;
+}
+
+input[type="email"]:focus {
+  outline: none; /* Remove default focus outline */
+  border: none; /* Change border color on focus */
+  color: #fff;
+}
+
+.sendButton {
+  padding: 8px 20px 8px 20px;
+  border-radius: 56px;
+  opacity: 0px;
+  color: #002699;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.3px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.quickLinksSection {
+  display: flex;
+  padding: 72px;
+  justify-content: space-between;
+}
+.linksSection {
+  display: flex;
+  align-items: baseline;
+}
+
+.aprnLogo {
+  width: 95px;
+  height: 80px;
+}
+
+.link {
+  font-size: 12.6px;
+  font-weight: 400;
+  line-height: 17.64px;
+  text-align: left;
+  color: #2f2f30;
+  padding: 8px 0px;
+  cursor: pointer;
+}
+
+.linkHead {
+  font-size: 14.7px;
+  font-weight: 500;
+  line-height: 23.52px;
+}
+.eachLinkSection {
+  padding-right: 56px;
+  text-align: left;
+}
+
+.link-list {
+  padding-left: 0px;
+}
+
+.copyRightSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.6px;
+  font-weight: 400;
+  line-height: 17.64px;
+  color: #2f2f30;
+  padding-top: 30px;
+  border-top: 1.05px solid #2f2f30;
+  margin: 0px 72px 4px 72px;
+}
+.copyRightItem {
+  padding-right: 16px;
+  cursor: pointer;
+}
+
+.hiringButton {
+  background: #f67748;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 11.55px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  border-radius: 96px;
+  margin-left: 8px;
+}

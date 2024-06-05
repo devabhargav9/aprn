@@ -1,0 +1,37 @@
+.businessPotential {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.howText {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.3px;
+  color: #002699;
+  padding-bottom: 15px;
+}
+.mainText {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.76px;
+  text-align: center;
+  color: #010101;
+  padding-bottom: 32px;
+}
+.mainTextBlue {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.76px;
+  text-align: center;
+  color: #002699;
+}
+
+.mainSubText {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #505050;
+  padding-bottom: 40px;
+}

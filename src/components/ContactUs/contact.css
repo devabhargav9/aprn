@@ -1,0 +1,110 @@
+.contact-form {
+  background-color: #fff;
+  width: 578px;
+  height: 657px;
+  opacity: 0px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.contact-form input {
+  width: 162%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 162px;
+}
+.styled-input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #828282;
+}
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #002699;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.namesContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  gap: 140px;
+}
+
+.header {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.76px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding: 0px;
+}
+
+.subText {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #828282;
+  padding: 0px;
+  padding-bottom: 52px;
+}
+
+#email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #828282;
+}
+
+#email:focus {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+}
+#email::placeholder {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+input[type="text"]::placeholder {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.dummyDiv {
+  padding-bottom: 24px;
+}

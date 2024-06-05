@@ -1,0 +1,82 @@
+.aboutCompanyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px 26px 160px;
+}
+.abtcontent1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.3px;
+  text-align: left;
+  color: #002699;
+}
+
+.abtcontent2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.76px;
+  text-align: left;
+  color: #010101;
+}
+
+.content2Blue {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.76px;
+  text-align: left;
+  color: #002699;
+}
+
+.extraContent1,
+.extraContent2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #696969;
+  padding-bottom: 16px;
+}
+
+.extraContent {
+  padding: 48px 44px 48px 44px;
+  border-radius: 12px;
+  opacity: 0px;
+  box-shadow: 8px 8px 64px 0px #0000000d;
+  background: #ffffffd9;
+  width: 600px;
+  position: relative;
+  right: 26%;
+  margin-top: 12px;
+}
+
+.aboutContent {
+  padding-left: 50px;
+}
+
+.learnMore {
+  width: fit-content;
+  padding: 16px 28px 16px 28px;
+  border-radius: 62px;
+  background: #002699;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.whiteArrow {
+  width: 14px;
+  height: 14px;
+  padding-left: 10px;
+}
+
+.extraHeader {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.88px;
+  text-align: left;
+  color: #010101;
+  padding-bottom: 24px;
+}

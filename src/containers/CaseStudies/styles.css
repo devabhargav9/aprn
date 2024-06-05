@@ -1,0 +1,11 @@
+.semiCircle {
+    width: 464px;
+    height: 464px;
+    top: 450px;
+    left: -180px;
+    background: rgba(151, 71, 255, 0.1);
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(rgba(151, 71, 255, 0.1), transparent);
+    filter: blur(10px);
+  }

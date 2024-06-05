@@ -1,0 +1,77 @@
+.carousel {
+  position: relative;
+  width: calc(410px * 3); /* 3 items visible */
+  margin: auto;
+  overflow: hidden;
+  padding: 24px 0px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.stars {
+  width: 100px; /* Adjust as necessary */
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.reviewer {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.carousel-dots {
+  text-align: center;
+  padding: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.carousel-item {
+  min-width: 382px;
+  box-sizing: border-box;
+  padding: 20px 0px 0px 0px;
+  border-radius: 12px;
+  border: 1px solid #d9d9d9;
+  padding: 16px;
+  margin-right: 32px;
+}
+
+.descText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #00000096;
+}
+
+.titleText {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.3px;
+  text-align: left;
+  color: #010101;
+}

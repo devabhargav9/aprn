@@ -1,0 +1,23 @@
+.BalanceContainer{
+    padding: 24px;
+    text-align: center;
+}
+.image-padding{
+    padding-left: 40px;
+    max-width: 1440px;
+    padding-bottom: 24px;
+}
+.image{
+    max-width: 1440px;
+}
+.semiCircle{
+    width: 464px;
+height: 464px;
+top: 450px;
+left: -180px;
+background: rgba(0, 38, 153, 0.1);
+position: absolute;
+border-radius: 50%;
+background: radial-gradient(rgba(0, 38, 153, 0.1), transparent);
+filter: blur(10px);
+}

@@ -1,0 +1,13 @@
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.contactUsIcon {
+  width: 578px;
+  height: 657px;
+  border-radius: 20px;
+  opacity: 0px;
+}

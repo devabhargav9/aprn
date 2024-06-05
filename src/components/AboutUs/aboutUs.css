@@ -1,0 +1,42 @@
+.aboutUsIcon{
+height: 986px;
+margin-top: 40px;
+padding: 0px 30px;
+width: -webkit-fill-available;
+}
+
+.semiCircle{
+    width: 464px;
+height: 464px;
+top: 330px;
+left: -180px;
+position: absolute;
+border-radius: 50%;
+background: radial-gradient(#9747FF1A, transparent);
+filter: blur(10px);
+background: #9747FF1A;
+}
+
+.semiCircleRight{
+    width: 464px;
+height: 464px;
+top: 130px;
+right: -180px;
+position: absolute;
+border-radius: 50%;
+background: radial-gradient(#ABE1FF40, transparent);
+filter: blur(10px);
+background: #ABE1FF40;
+}
+
+.aboutUsArt{
+    padding: 78px 0px;
+    width: -webkit-fill-available;
+
+}
+
+.joinUsIcon{
+    width: -webkit-fill-available;
+    padding-top: 78px;
+    padding-bottom: 40px;
+}

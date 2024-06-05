@@ -1,0 +1,33 @@
+.clientsListContiner {
+  background-color: #fff;
+  padding: 0px;
+  padding: 30px 0px;
+}
+.clients {
+  height: 560px;
+  width: -webkit-fill-available;
+}
+
+.clientsListHeading {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77.76px;
+  text-align: center;
+  color: black;
+}
+
+.diffText {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77.76px;
+  text-align: center;
+  color: #002699;
+}
+
+.subText {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  padding: 24px 0px 36px 0px;
+}
