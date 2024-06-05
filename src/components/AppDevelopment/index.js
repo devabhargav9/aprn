@@ -45,7 +45,7 @@ const AppDevelopment = () => {
       <ClientsScrollBar />
       <BusinessPotential diffText={"App Development"} />
       <Services services={AppDevServiceData} clickable={false} isAppDev={true}/>
-      <ScrollableComponent />
+      {/* <ScrollableComponent /> */}
       <img src={addDev3} className="addDev3" />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
