@@ -1,5 +1,4 @@
 {
-  "homepage": "https://devabhargav9.github.io/aprn",
   "name": "aprn-repo",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +18,7 @@
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0",
-    "sass": "^1.76.0",
+    "sass": "^1.77.4",
     "web-vitals": "^2.1.4",
     "webpack": "^5.91.0"
   },
@@ -27,9 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "const ipAddress = request.socket.remoteAddress.replace": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -51,7 +48,6 @@
   },
   "devDependencies": {
     "css-loader": "^7.1.1",
-    "node-sass": "^7.0.3",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0"
   }
