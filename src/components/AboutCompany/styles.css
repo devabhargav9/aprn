@@ -1,8 +1,6 @@
 .aboutCompanyContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 20px 26px 160px;
+  width: 1252px;
+  margin: 0px auto;
 }
 .abtcontent1 {
   font-size: 20px;
@@ -41,7 +39,6 @@
 .extraContent {
   padding: 48px 44px 48px 44px;
   border-radius: 12px;
-  opacity: 0px;
   box-shadow: 8px 8px 64px 0px #0000000d;
   background: #ffffffd9;
   width: 600px;
@@ -79,4 +76,8 @@
   text-align: left;
   color: #010101;
   padding-bottom: 24px;
+}
+
+.aboutCompanyImage{
+  width: 1252px;
 }

@@ -77,7 +77,6 @@ input[type="email"]:focus {
 .sendButton {
   padding: 8px 20px 8px 20px;
   border-radius: 56px;
-  opacity: 0px;
   color: #002699;
   background: #fff;
   font-size: 20px;

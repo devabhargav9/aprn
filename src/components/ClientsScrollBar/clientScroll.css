@@ -1,7 +1,7 @@
 .carousel-container {
   /* width: 100%; */
   overflow: hidden;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 16px 10px 16px;
   position: relative;
   cursor: pointer;
 }
@@ -45,7 +45,7 @@
   padding: 0px 60px;
 }
 
-.header {
+.clientHeader {
   font-size: 32px;
   font-weight: 700;
   line-height: 38.88px;

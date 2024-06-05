@@ -21,7 +21,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 40px 72px 0px 72px;
+  padding: 40px 72px 40px 72px;
 }
 
 .factsHeader{

@@ -11,7 +11,7 @@ const ClientList = () => {
   return (
     <div className="clientsListContiner">
       <div className="clientsListHeading">Meet Our <span className="diffText">Clients</span></div>
-      <div className="subText">Hear What Our Clients Have to Say! Glowing Recommendations <br/>from Our Customers</div>
+      <div className="clientsSubtext">Hear What Our Clients Have to Say! Glowing Recommendations <br/>from Our Customers</div>
      <img src={clients} alt="clients" className="clients" />
     </div>
   );

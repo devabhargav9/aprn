@@ -23,7 +23,7 @@ const ClientScrollBar = (props) => {
 
   return (
     <div className="carousel-container">
-      {props.showHeader && <div className="header">Some of our incredible clients</div>}
+      {props.showHeader && <div className="clientHeader">Some of our incredible clients</div>}
       <div className="carousel-track">
         <div className="carousel-content" ref={carouselContentRef}>
           {getImagesForClientScroll(clients)}
