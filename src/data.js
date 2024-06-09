@@ -62,6 +62,21 @@ import app4 from "../src/assets/app4.svg";
 import app5 from "../src/assets/app5.svg";
 
 
+import cap1 from "../src/assets/navBarDevops.svg";
+import cap2 from "../src/assets/navBarAppDev.svg";
+import cap3 from "../src/assets/navBarCloud.svg";
+import cap4 from "../src/assets/navbarAiml.svg";
+import cap5 from "../src/assets/navbarDigital.svg";
+import cap6 from "../src/assets/navbarDigital.svg";
+import cap7 from "../src/assets/navbarEcom.svg";
+import cap8 from "../src/assets/navBarDevTeams.svg";
+
+import abtUs1 from "../src/assets/abtUs1.svg";
+import abtUs2 from "../src/assets/abtUs2.svg";
+import abtUs3 from "../src/assets/abtUs3.svg";
+import abtUs4 from "../src/assets/abtUs4.svg";
+
+
 
 
 export const clients = [
@@ -195,7 +210,7 @@ export const navBarItems = [
 
   {
     name: "Capabilities",
-    redirect_url: "/service-cloud",
+    redirect_url: "",
   },
   // {
   //   name: "Industries",
@@ -206,10 +221,10 @@ export const navBarItems = [
     name: "About us",
     redirect_url: "/aboutUs",
   },
-  {
-    name: "Blogs",
-    redirect_url: "/service-digitalAnalytics",
-  },
+  // {
+  //   name: "Blogs",
+  //   redirect_url: "/service-digitalAnalytics",
+  // },
 
   {
     name: "Case studies",
@@ -475,4 +490,80 @@ export const AppDevServiceData = [
     desc: "Testing your enterprise or consumer web/mobile apps, we will focus on ensuring the proper functioning of all the components.",
     logo: app5,
   },
+];
+
+export const navBarCapabilities = [
+  {
+    name: "DevOps solution",
+    desc: "View all DevOps services",
+    logo: cap1,
+    redirect_url: "/service-devops",
+  },
+  {
+    name: "Mobile App Modernisation",
+    desc: "View all Mobile App services",
+    logo: cap2,
+    redirect_url: "/service-appDevelopment",
+  },
+  {
+    name: "Cloud Services",
+    desc: "View all Cloud Services",
+    logo: cap3,
+    redirect_url: "/service-cloud",
+  },
+  {
+    name: "AI / ML Services",
+    desc: "View all AI ML Services",
+    logo: cap4,
+    redirect_url: "/service-aiml",
+  },
+  {
+    name: "Digital Analytics",
+    desc: "View all Digital Analytics",
+    logo: cap5,
+    redirect_url: "/service-digitalAnalytics",
+  },
+  {
+    name: "IOT Solutions",
+    desc: "View all IOT Solutions",
+    logo: cap6,
+    redirect_url: "/service-iot",
+  },
+  {
+    name: "E-commerce",
+    desc: "View all E-commerce offerings",
+    logo: cap7,
+    redirect_url: "/service-ecom",
+  },
+  {
+    name: "Dedicated Dev Teams",
+    desc: "Know more",
+    logo: cap8,
+    redirect_url: "/service-devTeams",
+  },
+];
+
+export const aboutUsServicesData = [
+  {
+    name: "Partnership",
+    desc: "Pure play on emerging technologies. Strategic partnerships: AWS, Google, Microsoft.",
+    logo: abtUs1,
+  },
+
+  {
+    name: "Modern Approach",
+    desc: "We offer our clients creativity, innovation and engineering executed with tried and tested methodologies.",
+    logo: abtUs2,
+  },
+  {
+    name: "Scalability",
+    desc: "We help our clients ramp up fast. With our dynamic onboarding model we have the processes to onboard highly educated IT professionals at speed.",
+    logo: abtUs3,
+  },
+
+  {
+    name: "Top Talent",
+    desc: "Fast-growth, and emphasis on professional development mean very low attrition rates.",
+    logo: abtUs4,
+  }
 ];

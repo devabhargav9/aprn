@@ -16,6 +16,8 @@ import Ecom from './components/Ecom';
 import DevTeams from './components/ItTeams';
 import ContactPage from './containers/ContactPage';
 import AboutUs from './components/AboutUs';
+import MalayAirlines from './components/MalayAirlines';
+import MayBank from './components/MayBank';
 
 
 
@@ -34,7 +36,9 @@ const App = () => {
       <Route path="/service-devTeams" element={<DevTeams />} />
       <Route path="/caseStudies" element={<CaseStudiesHome />} />
       <Route path="/caseStudies/balance-app" element={<BalanceApp />} />  
-      <Route path="/caseStudies/kc-overseas" element={<KCOverSeas />} />   
+      <Route path="/caseStudies/kc-overseas" element={<KCOverSeas />} />  
+      <Route path='/caseStudies/malaysia-airlines' element={<MalayAirlines/>} /> 
+      <Route path='/caseStudies/maybank' element={<MayBank/>} />
       <Route path="/contactUs" element={<ContactPage />} />  
       <Route path='/aboutUs' element={<AboutUs />} /> 
     </Routes>

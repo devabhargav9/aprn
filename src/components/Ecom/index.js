@@ -1,5 +1,5 @@
 import React from "react";
-import ecomImage from "../../assets/ecomImage.svg";
+import ecomImage from "../../assets/ecomImage.png";
 import cloudImage2 from "../../assets/cloudImage2.svg";
 import arrow from "../../assets/whiteArrow.svg";
 import s from "../Devops/devopsStyles.css";
@@ -16,22 +16,28 @@ const Ecom = () => {
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer">
-        <img src={ecomImage} className="addDevPage" />
+      <div
+        className="AppDevContainer"
+        style={{ backgroundImage: `url(${ecomImage})` }}
+      >
         <div className="headTextSection">
-            <div className="buildText">Effortless Integration, Endless Expansion</div>
+          <div className="buildText">
+            Effortless Integration, Endless Expansion
+          </div>
           <div className="textOneapp">
-          Forge Your Path to <br />
-          <span style={{color: "#002699"}}>Online Market </span>Success
+            Forge Your Path to <br />
+            <span style={{ color: "#002699" }}>Online Market </span>Success
           </div>
           <div className="subTextapp">
-          Unleash the potential of your online store with our E-Commerce Services, <br />
-          automating tasks, enhancing software quality, and boosting reliability.
+            Unleash the potential of your online store with our E-Commerce
+            Services, <br />
+            automating tasks, enhancing software quality, and boosting
+            reliability.
           </div>
           <div className="buttonsContainerapp">
             <div className="getTouchapp">
               Get in Touch now{" "}
-              <img src={arrow} alt="arrrow" className="arrowapp" />
+              <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
             <div className="anyQueryapp">Any Query?</div>
           </div>
@@ -56,7 +62,7 @@ const Ecom = () => {
         extraHeader={"Why Choose us?"}
       />
       <Testinomials />
-      <BlogsList />
+      {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>
   );

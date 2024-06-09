@@ -17,31 +17,29 @@ const IOT = () => {
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer">
-        <img src={iotImage} className="addDevPage" />
-        <div className="headTextSection">
-          <div className="buildText">
-            Seamless Integration, Limitless Potential
-          </div>
-          <div className="textOneapp">
-            Discover Our <span style={{ color: "#002699" }}>IOT</span>
-            <br />
-            <span style={{ color: "#002699" }}>Solutions</span> for Tomorrow
-            {/* <span className="textTwoapp">Analytics Excellence</span> */}
-          </div>
-          <div className="subTextapp">
-            Our IOT solutions streamline processes by automating tasks, <br />
-            enhancing software quality, and boosting reliability.{" "}
-          </div>
-          <div className="buttonsContainerapp">
-            <div className="getTouchapp">
-              Get in Touch now{" "}
-              <img src={arrow} alt="arrrow" className="arrowapp" />
+      <div className="AppDevContainer" style={{ backgroundImage: `url(${iotImage})`}}>
+            <div className="headTextSection">
+                <div className="buildText">
+                    Seamless Integration, Limitless Potential
+                </div>
+                <div className="textOneapp">
+                    Discover Our <span style={{ color: "#002699" }}>IOT</span>
+                    <br />
+                    <span style={{ color: "#002699" }}>Solutions</span> for Tomorrow
+                </div>
+                <div className="subTextapp">
+                    Our IOT solutions streamline processes by automating tasks, <br />
+                    enhancing software quality, and boosting reliability.
+                </div>
+                <div className="buttonsContainerapp">
+                    <div className="getTouchapp">
+                        Get in Touch now{" "}
+                        <img src={arrow} alt="arrow" className="arrowapp" />
+                    </div>
+                    <div className="anyQueryapp">Any Query?</div>
+                </div>
             </div>
-            <div className="anyQueryapp">Any Query?</div>
-          </div>
         </div>
-      </div>
       <ClientsScrollBar />
       <BusinessPotential diffText={"IOT Solutions"} />
       <img src={addDev3} className="addDev3" />
@@ -61,7 +59,7 @@ const IOT = () => {
         extraHeader={"Why Choose us?"}
       />
       <Testinomials />
-      <BlogsList />
+      {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>
   );

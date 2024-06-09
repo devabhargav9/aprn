@@ -1,58 +1,54 @@
-.headerImage {
-  bottom: 70px;
-  position: relative;
-  width: -webkit-fill-available;
-  z-index: -1;
-  height: 950px;
+.MainHeaderContainer {
+  background-image: url('../../assets/mainHeader.png');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .headerContent {
-  position: relative;
-    bottom: 750px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* left: 14%; */
-}
-.headerContentWrapper{
-  /* margin-left: 24%; */
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
 }
 
 .content1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 34.02px;
-  text-align: left;
   color: #fff;
 }
 
 .content2 {
-  font-size: 82px;
+  font-size: 68px;
   font-weight: 700;
   line-height: 96px;
-  text-align: center;
-  color: #fff;
   padding: 12px 0px;
+  color: #fff;
 }
 
 .content3 {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
-  text-align: center;
-  color: #fff;
   padding-top: 16px;
+  color: #fff;
 }
 
 .getTouch {
-  padding: 16px 28px 16px 28px;
+  padding: 16px 28px;
   border-radius: 62px;
   background: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 19.44px;
   color: #002699;
-  width: fit-content;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -60,26 +56,25 @@
 
 .anyQuery {
   border: 1px solid #aeaeae;
-  padding: 18px 28px 18px 28px;
+  padding: 18px 28px;
   border-radius: 63px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.44px;
   color: #fff;
-  width: fit-content;
   margin-left: 16px;
   cursor: pointer;
 }
 
-.buttonsContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 44px;
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 44px;
 }
 
-.arrow{
-    width: 14px;
-    height: 14px;
-    padding-left: 10px;
+.arrow {
+  width: 14px;
+  height: 14px;
+  padding-left: 10px;
 }

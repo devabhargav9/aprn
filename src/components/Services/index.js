@@ -10,21 +10,35 @@ const Services = (props) => {
   return (
     <div className="servicesContainer">
       <div className="servicesHead">
-        <div className="textOne">Our latest services</div>
-        <div className="textTwo">Services that help keep</div>
-        <div className="textTwo">your organization secure</div>
-        <div className="textThree">
-          We are pioneers of the digital approach, using leading-edge technology
-          to <br />
-          simplify procedures and apply executive for your business.
-        </div>
+        <div className="textOne">{props.topText}</div>
+        <div className="textTwo">{props.bigText1}</div>
+        {props.bigText2 && <div className="textTwo">{props.bigText2}</div>}
+        {props.smallText1 && <div className="textThree">
+          {props.smallText1} <br />
+          {props.smallText2}
+        </div>}
+        {!props.smallText1 && <div className="dummy">
+         
+        </div>}
       </div>
-      <div className={props.isAppDev ? "appServicesSection" : "servicesSection"}>
+      <div
+        className={props.isAppDev ? "appServicesSection" : "servicesSection"}
+        style={{ height: `${props.heightFactor}px` }}
+      >
         {props.services.map((service, index) => (
-          <div key={index} className={props.clickable ? "service" : "noClickService"} onClick={()=> window.location.href = service.redirect_url}>
-            <img src={service.logo} alt={service.name} className="logo" />
+          <div
+            key={index}
+            className={props.clickable ? "service" : "noClickService"}
+            onClick={() =>
+              service.redirect_url &&
+              (window.location.href = service.redirect_url)
+            }
+          >
+            <div className="imageContainer">
+              <img src={service.logo} alt={service.name} className="logo" />
+            </div>
             <div className="name">{service.name}</div>
-            <div className="desc">{service.desc}</div>
+            <div className="description">{service.desc}</div>
           </div>
         ))}
       </div>

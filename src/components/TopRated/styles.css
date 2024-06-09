@@ -1,0 +1,24 @@
+.topImage{
+    width: 52px;
+    height: 52px;
+    padding-right: 16px;
+}
+
+.topRatedContainer{
+    display: flex;
+    align-items: center;
+
+}
+
+.right, .left{
+    display: flex;
+    align-items: center;
+}
+.stats{
+    text-align: left;
+}
+.center{
+    border: 1px solid #AEAEAE;
+    height: 50px;
+    margin: 0px 24px;
+}

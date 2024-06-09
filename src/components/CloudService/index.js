@@ -1,5 +1,5 @@
 import React from "react";
-import cloudImage from "../../assets/cloudImage.svg";
+import cloudImage from "../../assets/cloudImage.png";
 import cloudImage2 from "../../assets/cloudImage2.svg";
 
 import arrow from "../../assets/whiteArrow.svg";
@@ -19,31 +19,30 @@ const CloudService = () => {
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer">
-        <img src={cloudImage} className="addDevPage" />
-        <div className="headTextSection">
-            <div className="buildText">Build, Test and Deploy</div>
-          <div className="textOneapp">
-          Drive Growth and <br />
-          Efficiency with Our <br />
-            <span className="textTwoapp">Cloud Solutions</span>
-          </div>
-          <div className="subTextapp">
-          Our Cloud solutions streamline processes by automating tasks,<br />
-          enhancing software quality, and boosting reliability.
-          </div>
-          <div className="buttonsContainerapp">
-            <div className="getTouchapp">
-              Get in Touch now{" "}
-              <img src={arrow} alt="arrrow" className="arrowapp" />
+      <div className="AppDevContainer" style={{ backgroundImage: `url(${cloudImage})` }}>
+            <div className="headTextSection">
+                <div className="buildText">Build, Test and Deploy</div>
+                <div className="textOneapp">
+                    Drive Growth and <br />
+                    Efficiency with Our <br />
+                    <span className="textTwoapp">Cloud Solutions</span>
+                </div>
+                <div className="subTextapp">
+                    Our Cloud solutions streamline processes by automating tasks,<br />
+                    enhancing software quality, and boosting reliability.
+                </div>
+                <div className="buttonsContainerapp">
+                    <div className="getTouchapp">
+                        Get in Touch now{" "}
+                        <img src={arrow} alt="arrow" className="arrowapp" />
+                    </div>
+                    <div className="anyQueryapp">Any Query?</div>
+                </div>
             </div>
-            <div className="anyQueryapp">Any Query?</div>
-          </div>
         </div>
-      </div>
       <ClientsScrollBar />
       <BusinessPotential diffText={"Cloud Solutions"} />
-      <Services services={cloudServiceData} clickable={false} />
+      <Services services={cloudServiceData} clickable={true} heightFactor={975} topText={'Our latest services'} bigText1={'Services that help keep'} bigText2={'your organization ahead'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
     <img src={cloudImage2} className="addDev3" />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
@@ -61,7 +60,7 @@ const CloudService = () => {
         extraHeader={"Why Choose us?"}
       />
       <Testinomials />
-      <BlogsList />
+      {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>
   );

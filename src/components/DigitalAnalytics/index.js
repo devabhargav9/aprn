@@ -1,5 +1,5 @@
 import React from "react";
-import digitalAnalytics from "../../assets/digitalAnalytics.svg";
+import digitalAnalytics from "../../assets/digitalAnalytics.png";
 import addDev3 from "../../assets/appDev3.svg";
 
 import arrow from "../../assets/whiteArrow.svg";
@@ -17,26 +17,26 @@ const DigitalAnalytics = () => {
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer">
-        <img src={digitalAnalytics} className="addDevPage" />
-        <div className="headTextSection">
-        <div className="buildText">Data Informed, Results Obsessed</div>
-          <div className="textOneapp">
-          Your Trusted Partner in <br />
-            <span className="textTwoapp">Analytics Excellence</span>
-          </div>
-          <div className="subTextapp">
-          Our Digital Analytics solutions streamline processes by automating tasks, <br />
-          enhancing software quality, and boosting reliability.          </div>
-          <div className="buttonsContainerapp">
-            <div className="getTouchapp">
-              Get in Touch now{" "}
-              <img src={arrow} alt="arrrow" className="arrowapp" />
+      <div className="AppDevContainer" style={{ backgroundImage: `url(${digitalAnalytics})`}}>
+            <div className="headTextSection">
+                <div className="buildText">Data Informed, Results Obsessed</div>
+                <div className="textOneapp">
+                    Your Trusted Partner in <br />
+                    <span className="textTwoapp">Analytics Excellence</span>
+                </div>
+                <div className="subTextapp">
+                    Our Digital Analytics solutions streamline processes by automating tasks, <br />
+                    enhancing software quality, and boosting reliability.
+                </div>
+                <div className="buttonsContainerapp">
+                    <div className="getTouchapp">
+                        Get in Touch now{" "}
+                        <img src={arrow} alt="arrow" className="arrowapp" />
+                    </div>
+                    <div className="anyQueryapp">Any Query?</div>
+                </div>
             </div>
-            <div className="anyQueryapp">Any Query?</div>
-          </div>
         </div>
-      </div>
       <ClientsScrollBar />
       <BusinessPotential diffText={"Digital Analytics"} />
       <img src={addDev3} className="addDev3" />
@@ -56,7 +56,7 @@ const DigitalAnalytics = () => {
         extraHeader={"Why Choose us?"}
       />
       <Testinomials />
-      <BlogsList />
+      {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>
   );

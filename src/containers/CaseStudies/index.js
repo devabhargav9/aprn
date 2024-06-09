@@ -1,18 +1,12 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import s from "./styles.css";
-import Services from "../../components/Services";
 import HeadNavBar from "../../components/HeadNavBar";
-import ClientList from "../../components/ClientList";
 import ClientsScrollBar from "../../components/ClientsScrollBar";
-import Facts from "../../components/Facts";
-import MainHeader from "../../components/MainHeader";
+
 import AboutCompany from "../../components/AboutCompany";
 import aboutCompanyIcon from "../../assets/aboutCompany.png";
-import chooseUsIcon from "../../assets/chooseUs.png";
-import BlogsList from "../../components/BlogsList";
-import Testinomials from "../../components/Testinomials";
-import KCOverSeas from "../../components/kcOverseas";
+
 import CaseStudiesSection from "../../components/CaseStudiesSection";
 
 const CaseStudiesHome = () => {

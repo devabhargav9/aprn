@@ -1,5 +1,5 @@
 import React from "react";
-import addDevPage from "../../assets/appDevPage.svg";
+import addDevPage from "../../assets/appDevPage.png";
 import addDev3 from "../../assets/appDev3.svg";
 
 import arrow from "../../assets/whiteArrow.svg";
@@ -20,31 +20,31 @@ const AppDevelopment = () => {
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer">
-        <img src={addDevPage} className="addDevPage" />
-        <div className="headTextSection">
-          <div className="textOneapp">
+      <div className="AppDevContainer" style={{ backgroundImage: `url(${addDevPage})` }}>
+    <div className="headTextSection">
+        <div className="textOneapp">
             Futuristic <br />
             Approach to <br />
             <span className="textTwoapp">App Modernisation</span>
-          </div>
-          <div className="subTextapp">
-            We are your one-for-all Business and Technology Consultants,
+        </div>
+        <div className="subTextapp">
+            We are your one-for-all Business and Technology Consultants,
             offering customised, <br />
             secure solutions to suit your project needs.
-          </div>
-          <div className="buttonsContainerapp">
+        </div>
+        <div className="buttonsContainerapp">
             <div className="getTouchapp">
-              Get in Touch now{" "}
-              <img src={arrow} alt="arrrow" className="arrowapp" />
+                Get in Touch now{" "}
+                <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
             <div className="anyQueryapp">Any Query?</div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
+
       <ClientsScrollBar />
       <BusinessPotential diffText={"App Development"} />
-      <Services services={AppDevServiceData} clickable={false} isAppDev={true}/>
+      <Services services={AppDevServiceData} clickable={true} isAppDev={true} heightFactor={640} topText={'Our latest services'} bigText1={'Services that help keep'} bigText2={'your organization secure'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
       {/* <ScrollableComponent /> */}
       <img src={addDev3} className="addDev3" />
       <AboutCompany
@@ -63,7 +63,7 @@ const AppDevelopment = () => {
         extraHeader={"Why Choose us?"}
       />
       <Testinomials />
-      <BlogsList />
+      {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>
   );

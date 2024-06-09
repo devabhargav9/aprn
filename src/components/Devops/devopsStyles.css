@@ -38,27 +38,32 @@
     padding-left: 10px;
   }
   
-  .headTextSection {
-    position: absolute;
-    top: 18%;
-    left: 5%;
-    padding: 20px;
-  }
-  
   .addDevPage {
     height: 600px;
-    /* width: 100%; */
   }
   
   .AppDevContainer {
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 84px);
+    padding-top: 84px;
     display: flex;
     align-items: center;
-    justify-content: end;
-    padding-bottom: 20px;
+    justify-content: center;
+    position: relative;
+    color: #fff;
   }
   
+  .headTextSection {
+    padding: 20px;
+    position: absolute;
+    left: 5%;
+    transform: translateY(-1%);
+  }
+  
+  
   .textOneapp {
-    font-size: 76px;
+    font-size: 68px;
     font-weight: 700;
     line-height: 90px;
     text-align: left;
@@ -84,7 +89,7 @@
   }
   
   .buildText {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 34.02px;
     text-align: left;

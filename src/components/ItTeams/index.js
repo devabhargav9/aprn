@@ -1,5 +1,5 @@
 import React from "react";
-import itSquad from "../../assets/itSquad.svg";
+import itSquad from "../../assets/itSquad.png";
 import cloudImage2 from "../../assets/cloudImage2.svg";
 import arrow from "../../assets/whiteArrow.svg";
 import s from "../Devops/devopsStyles.css";
@@ -16,27 +16,26 @@ const DevTeams = () => {
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer">
-        <img src={itSquad} className="addDevPage" />
-        <div className="headTextSection">
-            <div className="buildText">Expert team delivers innovative solutions</div>
-          <div className="textOneapp">
-          Clever <span style={{color: "#002699"}}>IT Squad</span> <br />
-          Shaping Digital Future
-          </div>
-          <div className="subTextapp">
-          Our IT team thrives on collaboration, innovation, and problem-solving, ensuring <br />
-          seamless technology integration and unparalleled support
-          </div>
-          <div className="buttonsContainerapp">
-            <div className="getTouchapp">
-              Get in Touch now{" "}
-              <img src={arrow} alt="arrrow" className="arrowapp" />
+      <div className="AppDevContainer" style={{ backgroundImage: `url(${itSquad})`}}>
+            <div className="headTextSection">
+                <div className="buildText">Expert team delivers innovative solutions</div>
+                <div className="textOneapp">
+                    Clever <span style={{ color: "#002699" }}>IT Squad</span> <br />
+                    Shaping Digital Future
+                </div>
+                <div className="subTextapp">
+                    Our IT team thrives on collaboration, innovation, and problem-solving, ensuring <br />
+                    seamless technology integration and unparalleled support
+                </div>
+                <div className="buttonsContainerapp">
+                    <div className="getTouchapp">
+                        Get in Touch now{" "}
+                        <img src={arrow} alt="arrow" className="arrowapp" />
+                    </div>
+                    <div className="anyQueryapp">Any Query?</div>
+                </div>
             </div>
-            <div className="anyQueryapp">Any Query?</div>
-          </div>
         </div>
-      </div>
       <ClientsScrollBar />
       <BusinessPotential diffText={"Dedicated Dev Team"} />
       <img src={cloudImage2} className="addDev3" />
@@ -56,7 +55,7 @@ const DevTeams = () => {
         extraHeader={"Why Choose us?"}
       />
       <Testinomials />
-      <BlogsList />
+      {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>
   );

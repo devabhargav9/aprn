@@ -1,5 +1,5 @@
 import React from "react";
-import aimlPage from "../../assets/aimlPage.svg";
+import aimlPage from "../../assets/aimlPage.png";
 import addDev3 from "../../assets/appDev3.svg";
 
 import arrow from "../../assets/whiteArrow.svg";
@@ -17,11 +17,10 @@ const AIML = () => {
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer">
-        <img src={aimlPage} className="addDevPage" />
-        <div className="headTextSection">
-        <div className="buildText">AI & ML Innovations</div>
-          <div className="textOneapp">
+      <div className="AppDevContainer" style={{ backgroundImage: `url(${aimlPage})` }}>
+            <div className="headTextSection">
+            <div className="buildText">AI & ML Innovations</div>
+            <div className="textOneapp">
           <span style={{color: "#002699"}}>AI & ML </span>
           Solutions for <br />
           Tomorrow's Challenges <br />
@@ -30,15 +29,15 @@ const AIML = () => {
           Our AL/ML solutions streamline processes by automating tasks, <br />
           enhancing software quality, and boosting reliability.
           </div>
-          <div className="buttonsContainerapp">
-            <div className="getTouchapp">
-              Get in Touch now{" "}
-              <img src={arrow} alt="arrrow" className="arrowapp" />
+                <div className="buttonsContainerapp">
+                    <div className="getTouchapp">
+                        Get in Touch now{" "}
+                        <img src={arrow} alt="arrrow" className="arrowapp" />                    </div>
+                    <div className="anyQueryapp">Any Query?</div>
+                </div>
             </div>
-            <div className="anyQueryapp">Any Query?</div>
-          </div>
         </div>
-      </div>
+
       <ClientsScrollBar />
       <BusinessPotential diffText={"AI/ML Solutions"} />
       <img src={addDev3} className="addDev3" />
@@ -58,7 +57,7 @@ const AIML = () => {
         extraHeader={"Why Choose us?"}
       />
       <Testinomials />
-      <BlogsList />
+      {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>
   );

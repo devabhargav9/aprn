@@ -1,42 +1,111 @@
-.aboutUsIcon{
-height: 986px;
-margin-top: 40px;
-padding: 0px 30px;
-width: -webkit-fill-available;
+.semiCircle {
+  width: 464px;
+  height: 464px;
+  top: 330px;
+  left: -180px;
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#9747ff1a, transparent);
+  filter: blur(10px);
+  background: #9747ff1a;
 }
 
-.semiCircle{
-    width: 464px;
-height: 464px;
-top: 330px;
-left: -180px;
-position: absolute;
-border-radius: 50%;
-background: radial-gradient(#9747FF1A, transparent);
-filter: blur(10px);
-background: #9747FF1A;
+.semiCircleRight {
+  width: 464px;
+  height: 464px;
+  top: 130px;
+  right: -180px;
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#abe1ff40, transparent);
+  filter: blur(10px);
+  background: #abe1ff40;
 }
 
-.semiCircleRight{
-    width: 464px;
-height: 464px;
-top: 130px;
-right: -180px;
-position: absolute;
-border-radius: 50%;
-background: radial-gradient(#ABE1FF40, transparent);
-filter: blur(10px);
-background: #ABE1FF40;
+.joinUsIcon {
+  width: -webkit-fill-available;
+  padding-top: 78px;
+  padding-bottom: 40px;
 }
 
-.aboutUsArt{
-    padding: 78px 0px;
-    width: -webkit-fill-available;
-
+.aboutUsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 96px;
+}
+.abtUs {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24.3px;
+}
+.welcomeText {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 92.34px;
+  text-align: center;
+}
+.welcomeBlue {
+  color: #002699;
+}
+.supportText {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #505050;
+  padding-top: 28px;
+}
+.aboutUsIcon {
+  width: 1200px;
+  padding: 40px 72px;
+}
+.joinText {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: #ffffff;
+}
+.openings {
+  width: fit-content;
+  padding: 16px 28px 16px 28px;
+  border-radius: 62px;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.44px;
+  text-align: left;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+  cursor: pointer;
+}
+.openArrow {
+  width: 14px;
+  height: 14px;
+  padding-left: 10px;
 }
 
-.joinUsIcon{
-    width: -webkit-fill-available;
-    padding-top: 78px;
-    padding-bottom: 40px;
+.joinUsSection {
+  position: relative;
+  background: url("../../assets/joinUs.svg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 486px;
+  width: -webkit-fill-available;
+}
+
+.joinTextSection {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
