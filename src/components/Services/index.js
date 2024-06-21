@@ -59,7 +59,7 @@ const Services = (props) => {
         )}
         {!props.smallText1 && <div className="dummy"></div>}
       </div>
-      <div className="toggle-tabs-container">
+      {props.showToggle && <div className="toggle-tabs-container">
         <div className="toggle-tabs">
           <button
             className={`tab ${activeTab === 'enterprise' ? 'active' : ''}`}
@@ -74,7 +74,7 @@ const Services = (props) => {
             Software
           </button>
         </div>
-      </div>
+      </div>}
       <div
         className={props.isAppDev ? "appServicesSection" : "servicesSection"}
         style={{ height: `${props.heightFactor}px` }}
