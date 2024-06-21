@@ -43,7 +43,6 @@ const DevopsService = () => {
       <ClientsScrollBar />
       <BusinessPotential diffText={"DevOps Solutions"} />
       <Services services={devopsServiceData} clickable={true} heightFactor={975} topText={'Our latest services'} bigText1={'Services that help keep'} bigText2={'your organization ahead'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
-      <img src={cloudImage2} className="addDev3" />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -59,7 +58,7 @@ const DevopsService = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <Testinomials />
+      {/* <Testinomials /> */}
       <BlogsList />
       <Footer showAstronaut={true} />
     </div>

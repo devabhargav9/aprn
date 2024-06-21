@@ -1,16 +1,55 @@
-.caseStudiesContainer{
-    padding: 40px 0px;
-    text-align: center;
+.caseStudiesContainer {
+  padding: 40px 0px;
+  text-align: center;
+  width: 1136px;
+  margin: 0px auto;
 }
 
-.caseSudiesSection{
-    display: flex;
-    align-items: center;
-    padding: 60px 0px;
-    gap: 16px;
-    justify-content: center;
+.caseSudiesSection {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 24px;
+  gap: 16px;
+  justify-content: center;
 }
 
-.balanceImage{
+.balanceImage {
+  cursor: pointer;
+  width: 362.67px;
+  height: 295px;
+  border-radius: 12px;
+}
+.mayImage {
+  cursor: pointer;
+  width: 553.88px;
+  height: 319.5px;
+  border-radius: 12px;
+}
+
+.caseSudiesSection2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  gap: 16px;
+  justify-content: center;
+}
+
+.carPoolImg {
+  cursor: pointer;
+  width: 271.13px;
+  height: 319.5px;
+  border-radius: 12px;
+}
+.devopsCS2 {
+  cursor: pointer;
+  width: 459.22px;
+  height: 249.12px;
+  border-radius: 12px;
+}
+.devopsCS3{
     cursor: pointer;
+    width: 653px;
+    height: 249.12px;
+    border-radius: 12px;
 }

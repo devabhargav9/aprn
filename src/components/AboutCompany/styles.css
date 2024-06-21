@@ -15,7 +15,7 @@
 }
 
 .abtcontent2, .subText2 {
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 77.76px;
   text-align: left;
@@ -23,7 +23,7 @@
 }
 
 .content2Blue {
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 77.76px;
   text-align: left;
@@ -32,7 +32,7 @@
 
 .extraContent1,
 .extraContent2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
@@ -44,15 +44,24 @@
   padding: 48px 44px 48px 44px;
   border-radius: 12px;
   box-shadow: 8px 8px 64px 0px #0000000d;
-  background: #ffffffd9;
+  background: rgba(255, 255, 255, 0.95);
   width: 600px;
   position: relative;
-  right: 26%;
+  right: 22%;
   margin-top: 12px;
 }
 
 .aboutContent {
   padding-left: 50px;
+}
+
+.topContentDiff{
+  padding-left: 42px;
+}
+
+.topContentDiffAbtUs{
+  padding-left: 0px;
+
 }
 
 .learnMore {

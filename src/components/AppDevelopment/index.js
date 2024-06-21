@@ -1,6 +1,5 @@
 import React from "react";
 import addDevPage from "../../assets/appDevPage.png";
-import addDev3 from "../../assets/appDev3.svg";
 
 import arrow from "../../assets/whiteArrow.svg";
 import s from "./appstyles.css";
@@ -46,7 +45,6 @@ const AppDevelopment = () => {
       <BusinessPotential diffText={"App Development"} />
       <Services services={AppDevServiceData} clickable={true} isAppDev={true} heightFactor={640} topText={'Our latest services'} bigText1={'Services that help keep'} bigText2={'your organization secure'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
       {/* <ScrollableComponent /> */}
-      <img src={addDev3} className="addDev3" />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -62,7 +60,7 @@ const AppDevelopment = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <Testinomials />
+      {/* <Testinomials /> */}
       {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>

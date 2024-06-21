@@ -45,7 +45,6 @@ const Ecom = () => {
       </div>
       <ClientsScrollBar />
       <BusinessPotential diffText={"E-commerce Services"} />
-      <img src={cloudImage2} className="addDev3" />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -61,7 +60,7 @@ const Ecom = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <Testinomials />
+      {/* <Testinomials /> */}
       {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>

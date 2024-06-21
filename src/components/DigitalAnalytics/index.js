@@ -1,6 +1,5 @@
 import React from "react";
 import digitalAnalytics from "../../assets/digitalAnalytics.png";
-import addDev3 from "../../assets/appDev3.svg";
 
 import arrow from "../../assets/whiteArrow.svg";
 import s from "../Devops/devopsStyles.css";
@@ -39,7 +38,6 @@ const DigitalAnalytics = () => {
         </div>
       <ClientsScrollBar />
       <BusinessPotential diffText={"Digital Analytics"} />
-      <img src={addDev3} className="addDev3" />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -55,7 +53,7 @@ const DigitalAnalytics = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <Testinomials />
+      {/* <Testinomials /> */}
       {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>

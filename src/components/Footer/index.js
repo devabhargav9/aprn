@@ -8,9 +8,6 @@ import aprnLogo from "../../assets/aprnLogo.svg";
 import { footerLinks } from "../../data";
 
 const Footer = (props) => {
-  useEffect(() => {
-    console.log("Hello Deva", s.footerContainer);
-  }, []);
 
   const renderLinks = () => {
     return Object.entries(footerLinks).map(([heading, elements]) => (
@@ -29,11 +26,11 @@ const Footer = (props) => {
   return (
     <div className="footerSection">
       {props.showAstronaut && <div className="footerContainer">
-        <img
+        {/* <img
           src={astronautIcon}
           alt="astronautIcon"
           className="astronautIcon"
-        />
+        /> */}
         <div className="contactUs">
           <div className="readyText">Ready to get</div>
           <div className="readyTextStart">started?</div>

@@ -1,7 +1,5 @@
 import React from "react";
 import iotImage from "../../assets/iotImage.svg";
-import addDev3 from "../../assets/appDev3.svg";
-
 import arrow from "../../assets/whiteArrow.svg";
 import s from "../Devops/devopsStyles.css";
 import HeadNavBar from "../HeadNavBar";
@@ -42,7 +40,6 @@ const IOT = () => {
         </div>
       <ClientsScrollBar />
       <BusinessPotential diffText={"IOT Solutions"} />
-      <img src={addDev3} className="addDev3" />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -58,7 +55,7 @@ const IOT = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <Testinomials />
+      {/* <Testinomials /> */}
       {/* <BlogsList /> */}
       <Footer showAstronaut={true} />
     </div>

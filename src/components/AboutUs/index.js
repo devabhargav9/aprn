@@ -44,9 +44,9 @@ const AboutUs = () => {
       <AboutCompany
         placeHolderImg={aboutCompanyIcon}
         headText={"About our company"}
-        subText1={"We're the world's best"}
-        subText2={"IT solutions"}
-        subText3={"company"}
+        subText1={"Unlocking"}
+        subText2={"pontential for"}
+        subText3={"enterprises worldwide"}
         extraText1={
           "At APRN, we believe in fostering a work environment that feels more like family. A Culture of Belonging means that every member of our team feels valued, respected, and supported. We have been helping businesses with their IT needs since 2010. We are provide fast, reliable, outsourced onsite and remote IT support services."
         }
@@ -54,6 +54,7 @@ const AboutUs = () => {
           "We celebrate our differences through our Employee Resource Groups and learn from each other through mentorship programs. We also enjoy regular team-building activities and social events to build strong bonds."
         }
         showCTA={false}
+        isAboutUs={true}
       />
       <div className="joinUsSection">
         <div className="joinTextSection">

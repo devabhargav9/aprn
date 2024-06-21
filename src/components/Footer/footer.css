@@ -1,4 +1,16 @@
 .footerContainer {
+  /* display: flex;
+  align-items: center;
+  position: relative; 
+  background-image: url('../../assets/astronaut.png');
+  background-size: cover;
+  background-position: center; */
+
+
+  background-image: url('../../assets/astronaut.png');
+  background-size: cover;
+  background-position: center;
+  height: 462px;
   display: flex;
   align-items: center;
   position: relative; 
@@ -20,14 +32,14 @@
 }
 
 .readyText {
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 600;
   line-height: 77.76px;
   text-align: left;
 }
 
 .readyTextStart {
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 600;
   line-height: 77.76px;
   text-align: left;
@@ -104,7 +116,7 @@ input[type="email"]:focus {
 .link {
   font-size: 12.6px;
   font-weight: 400;
-  line-height: 17.64px;
+  line-height: 17.48px;
   text-align: left;
   color: #2f2f30;
   padding: 8px 0px;
@@ -131,7 +143,7 @@ input[type="email"]:focus {
   justify-content: space-between;
   font-size: 12.6px;
   font-weight: 400;
-  line-height: 17.64px;
+  line-height: 17.48px;
   color: #2f2f30;
   padding-top: 30px;
   border-top: 1.05px solid #2f2f30;

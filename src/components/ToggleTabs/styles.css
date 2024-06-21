@@ -1,0 +1,39 @@
+
+/* Container for the toggle tabs */
+.toggle-tabs-container {
+    width: 300px;
+}
+
+/* Toggle tabs styling */
+.toggle-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Individual tab styling */
+.tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.2s;
+}
+
+/* Active tab styling */
+.tab.active {
+    background-color: #66bb6a;
+    color: white;
+}
+
+/* Content area styling */
+.content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
