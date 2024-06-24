@@ -60,9 +60,9 @@ const CaseStudiesSection = () => {
       <div className="caseSudiesSection2">
         <img
           src={carPool}
-          alt="Balance Case Study"
+          alt="Carpool Case Study"
           className="carPoolImg"
-          onClick={redirectToCaseStudy("balance-app")}
+          onClick={redirectToCaseStudy("carpool")}
         ></img>
         <img
           src={mayBankCS}
@@ -73,9 +73,9 @@ const CaseStudiesSection = () => {
 
         <img
           src={devopscs1}
-          alt="KC overseas Case Study"
+          alt="Devops Case study 1"
           className="carPoolImg"
-          onClick={redirectToCaseStudy("kc-overseas")}
+          onClick={redirectToCaseStudy("devops-appModernization")}
         ></img>
         
       </div>
@@ -84,13 +84,13 @@ const CaseStudiesSection = () => {
           src={devopscs2}
           alt="Balance Case Study"
           className="devopsCS2"
-          onClick={redirectToCaseStudy("balance-app")}
+          onClick={redirectToCaseStudy("appModern-cs")}
         ></img>
         <img
           src={devopscs3}
           alt="KC overseas Case Study"
           className="devopsCS3"
-          onClick={redirectToCaseStudy("maybank")}
+          onClick={redirectToCaseStudy("cloud-cs")}
         ></img>        
       </div>
       <div className="caseSudiesSection2">

@@ -18,6 +18,10 @@ import ContactPage from './containers/ContactPage';
 import AboutUs from './components/AboutUs';
 import MalayAirlines from './components/MalayAirlines';
 import MayBank from './components/MayBank';
+import CarPool from './components/CarPool';
+import DevopsCase1 from './components/devopsCase1';
+import DevopsCase2 from './components/devopsCase2';
+import DevopsCase3 from './components/devopsCase3';
 
 
 
@@ -39,6 +43,10 @@ const App = () => {
       <Route path="/caseStudies/kc-overseas" element={<KCOverSeas />} />  
       <Route path='/caseStudies/malaysia-airlines' element={<MalayAirlines/>} /> 
       <Route path='/caseStudies/maybank' element={<MayBank/>} />
+      <Route path="/caseStudies/carpool" element={<CarPool />} />
+      <Route path="/caseStudies/devops-appModernization" element={<DevopsCase1 />} />
+      <Route path="/caseStudies/cloud-cs" element={<DevopsCase2 />} />
+      <Route path="/caseStudies/appModern-cs" element={<DevopsCase3 />} />
       <Route path="/contactUs" element={<ContactPage />} />  
       <Route path='/aboutUs' element={<AboutUs />} /> 
     </Routes>
