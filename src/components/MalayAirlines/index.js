@@ -115,9 +115,7 @@ const MalayAirlines = () => {
           </div>
         </div>
         <div className="kcCon1">
-          <div>
-            <img className="malay5" src={malay5} />
-          </div>
+          
           <div className="lhs">
             <div className="kcHead1">
               The <span className="appHighMalay">Outcome</span>
@@ -136,6 +134,9 @@ const MalayAirlines = () => {
               <br />
               Hence, I put a clear label to indicate its level of restriction.{" "}
             </div>
+          </div>
+          <div>
+            <img className="malay5" src={malay5} />
           </div>
         </div>
       </div>

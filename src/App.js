@@ -22,6 +22,8 @@ import CarPool from './components/CarPool';
 import DevopsCase1 from './components/devopsCase1';
 import DevopsCase2 from './components/devopsCase2';
 import DevopsCase3 from './components/devopsCase3';
+import DevopsCase4 from './components/devopsCase4';
+import DevopsCase5 from './components/devopsCase5';
 
 
 
@@ -47,6 +49,8 @@ const App = () => {
       <Route path="/caseStudies/devops-appModernization" element={<DevopsCase1 />} />
       <Route path="/caseStudies/cloud-cs" element={<DevopsCase2 />} />
       <Route path="/caseStudies/appModern-cs" element={<DevopsCase3 />} />
+      <Route path="/caseStudies/appModern2-cs" element={<DevopsCase4 />} />
+      <Route path="/caseStudies/healthCheck-cs" element={<DevopsCase5 />} />
       <Route path="/contactUs" element={<ContactPage />} />  
       <Route path='/aboutUs' element={<AboutUs />} /> 
     </Routes>

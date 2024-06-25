@@ -98,13 +98,13 @@ const CaseStudiesSection = () => {
           src={devopscs4}
           alt="KC overseas Case Study"
           className="devopsCS3"
-          onClick={redirectToCaseStudy("maybank")}
+          onClick={redirectToCaseStudy("appModern2-cs")}
         ></img>   
          <img
           src={devopscs5}
           alt="Balance Case Study"
           className="devopsCS2"
-          onClick={redirectToCaseStudy("balance-app")}
+          onClick={redirectToCaseStudy("healthCheck-cs")}
         ></img>     
       </div>
     </div>
