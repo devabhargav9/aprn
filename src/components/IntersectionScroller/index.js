@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { jarallax } from 'jarallax'; // Import jarallax
 import './scroller.scss'; // Adjust the path as per your file structure
 
 const ScrollableComponent = ({ data }) => {
@@ -7,8 +6,6 @@ const ScrollableComponent = ({ data }) => {
 
   useEffect(() => {
     if (containerRef.current) {
-      jarallax(containerRef.current);
-
       // Detect when all items are scrolled fully
       containerRef.current.addEventListener('scroll', handleScroll);
 
