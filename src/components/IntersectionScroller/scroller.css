@@ -1,9 +1,0 @@
-.scrollable-container {
-    height: 20vh;
-    overflow-y: auto;
-  }
-  
-  .content {
-    height: 40vh; /* Make this large to enable scrolling */
-  }
-  

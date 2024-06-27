@@ -1,67 +1,58 @@
-import React, { useRef, useEffect, useState } from 'react';
-import './scroller.css';
+import React, { useEffect, useRef } from 'react';
+import { jarallax } from 'jarallax'; // Import jarallax
+import './scroller.scss'; // Adjust the path as per your file structure
 
-const ScrollableComponent = () => {
+const ScrollableComponent = ({ data }) => {
   const containerRef = useRef(null);
-  const [isAtBottom, setIsAtBottom] = useState(false);
-  const [isInView, setIsInView] = useState(false);
-
-  const handleScroll = () => {
-    const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
-    setIsAtBottom(scrollTop + clientHeight >= scrollHeight);
-  };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            document.body.style.overflow = 'hidden';
-          } else {
-            setIsInView(false);
-            document.body.style.overflow = 'auto';
-          }
-        });
-      },
-      { threshold: 0 }
-    );
+    if (containerRef.current) {
+      jarallax(containerRef.current);
 
-    observer.observe(containerRef.current);
+      // Detect when all items are scrolled fully
+      containerRef.current.addEventListener('scroll', handleScroll);
 
-    return () => {
-      observer.disconnect();
-      document.body.style.overflow = 'auto';
-    };
+      return () => {
+        containerRef.current.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, []);
 
-  useEffect(() => {
-    if (isInView && isAtBottom) {
-      document.body.style.overflow = 'auto';
+  const handleScroll = () => {
+    const container = containerRef.current;
+    if (container) {
+      // Check if all items are scrolled fully
+      const isScrollable = container.scrollHeight - container.clientHeight <= container.scrollTop;
+      if (isScrollable) {
+        container.style.overflowY = 'hidden'; // Disable further scrolling
+      } else {
+        container.style.overflowY = 'auto'; // Enable scrolling
+      }
     }
-  }, [isInView, isAtBottom]);
+  };
+
+  const renderImages = () => {
+    return (
+      <>
+        {data.map((img, index) => (
+          <figure key={index}>
+            <img src={img} alt={`Image ${index}`} />
+          </figure>
+        ))}
+         <figure>
+         <div className="end-of-scroll"></div> {/* Transparent div at the end */}
+
+          </figure>
+      </>
+    );
+  };
 
   return (
-    <div
-      className="scrollable-container"
-      ref={containerRef}
-      onScroll={handleScroll}
-    >
-      {/* Content goes here */}
-      <div className="content">
-        {/* Add a lot of content here to make it scrollable */}
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
-        <p>Your scrollable content here...</p>
+    <div>
+      {/* <div className='caseHead'>Case Studies</div>
+      <div className='caseSub'>See How we Built <br/>Top Quality Products</div> */}
+      <div className="scrollableContainer" ref={containerRef}>
+        <article>{renderImages()}</article>
       </div>
     </div>
   );

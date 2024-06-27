@@ -76,6 +76,15 @@ import abtUs2 from "../src/assets/abtUs2.svg";
 import abtUs3 from "../src/assets/abtUs3.svg";
 import abtUs4 from "../src/assets/abtUs4.svg";
 
+import scroll1 from "../src/assets/scroll1.png";
+import scroll2 from "../src/assets/scroll2.png";
+import scroll3 from "../src/assets/scroll3.png";
+import scroll4 from "../src/assets/scroll4.png";
+import scroll5 from "../src/assets/scroll5.png";
+import scroll6 from "../src/assets/trans.jpg";
+
+
+
 
 
 
@@ -567,3 +576,5 @@ export const aboutUsServicesData = [
     logo: abtUs4,
   }
 ];
+
+export const appScrollData = [scroll1, scroll2, scroll3,scroll4, scroll5];
