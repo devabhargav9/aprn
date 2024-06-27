@@ -46,8 +46,8 @@ const ScrollableComponent = ({ data }) => {
 
   return (
     <div>
-      {/* <div className='caseHead'>Case Studies</div>
-      <div className='caseSub'>See How we Built <br/>Top Quality Products</div> */}
+      <div className='caseHead'>Case Studies</div>
+      <div className='caseSub'>See How we Built <br/>Top Quality Products</div>
       <div className="scrollableContainer" ref={containerRef}>
         <article>{renderImages()}</article>
       </div>
