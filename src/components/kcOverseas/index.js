@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles.css";
 import { kcData } from "../../data";
 import kcImage1 from "../../assets/kcImage1.png";
@@ -6,14 +6,26 @@ import kcImage2 from "../../assets/kcImage2.png";
 import kcImage3 from "../../assets/kcImage3.png";
 import kcImage4 from "../../assets/kcImage4.png";
 import kcImage5 from "../../assets/kcImage5.png";
-import growthImg from "../../assets/growthImage.svg";
+import growthImg from '../../assets/grow.svg';
 import greenTick from "../../assets/greenTick.svg";
+import growthBlue from '../../assets/growthBlue.svg';
+import growthYellow from '../../assets/growYellow.svg';
+
+
+import topRated from '../../assets/topRated.svg';
 
 import HeadNavBar from "../HeadNavBar";
 import Footer from "../Footer";
 import TopRated from "../TopRated";
 
 const KCOverSeas = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const lastSecContent = [
     "Enhanced customer engagement through rewarding campaigns",
     "Average time spent on the app exceeded industry benchmarks",
@@ -36,7 +48,7 @@ const KCOverSeas = () => {
               KC Overseas offers a smart digital solution for the <br />
               students planning to study abroad
             </div>
-            <TopRated />
+            <TopRated stat1={'60%'} text1={'Higher conversion rates'} icon1={growthBlue} stat2={'40%'} text2={'Faster Speed to market'} icon2={growthImg} text3={'Enhance data analytics'} icon3={growthYellow}/>
           </div>
           <div>
             <img className="kcImg1" src={kcImage1} />
@@ -48,14 +60,7 @@ const KCOverSeas = () => {
               About the <span className="appHigh">App</span>
             </div>
             <div className="kcText1">
-              What is Kc overseas? students who want to study abroad can find{" "}
-              <br />
-              information about universities in various countries, the
-              application <br />
-              process, and the visa process in a single app. Our app has
-              features <br />
-              like Explore University, Get Consultation, IELTS Course,
-              <br /> Professional Course, Community.
+            KC Overseas is such a platform which helps students who want to <br />study abroad can find information about universities in various <br />countries, the application process, and the visa process in a single <br />app. This app has varied services and features such as Explore <br />University, Get Consultation, IELTS Course, Professional Course, <br />Community.
             </div>
             <div className="kcHead2">Problems</div>
             <div className="kcText2">
@@ -197,7 +202,7 @@ const KCOverSeas = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </>
   );
 };

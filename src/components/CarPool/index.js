@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles.css";
 import { kcData } from "../../data";
 import carpool1 from "../../assets/carpool1.png";
@@ -16,6 +16,13 @@ import Footer from "../Footer";
 import TopRated from "../TopRated";
 
 const CarPool = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <HeadNavBar />
@@ -128,7 +135,7 @@ const CarPool = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </>
   );
 };

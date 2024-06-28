@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles.css";
 import { kcData } from "../../data";
 import may1 from "../../assets/may1.png";
@@ -8,12 +8,21 @@ import may4 from "../../assets/may4.png";
 import may5 from "../../assets/may5.png";
 import growthImg from "../../assets/growthImage.svg";
 import mayStats from "../../assets/mayStats.svg";
+import growthYellow from '../../assets/growYellow.svg';
+
 
 import HeadNavBar from "../HeadNavBar";
 import Footer from "../Footer";
 import TopRated from "../TopRated";
 
 const MayBank = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <HeadNavBar />
@@ -28,8 +37,28 @@ const MayBank = () => {
             <div className="kcSubText">
             Maybank2u is the internet banking portal of Maybank, Malaysia's <br/>largest bank — positioning itself as the one stop portal for all <br/>online financial needs such as banking, payments, insurance and <br/>stock broking.
             </div>
-            <img className="malayStats" src={mayStats} />
-          </div>
+            <div className="dev1Stats">
+              <div className="dev1Lhs">
+                <div className="dev1Percent" style={{color: 'rgba(235, 161, 15, 1)'}}>70%</div>
+                <div className="dev1Text">
+                Noticable growth
+                </div>
+              </div>
+              <div className="dev1Mid"></div>
+              <div className="dev1Rhs">
+                <div className="dev1Percent" style={{color: 'rgba(235, 161, 15, 1)'}}>2x</div>
+                <div className="dev1Text">
+                Increment in customer positive feedback on the app
+                </div>
+              </div>
+              <div className="dev1Mid"></div>
+              <div className="dev1Rhs">
+              <img src={growthYellow} alt='growth'/>
+                <div className="dev1Text">
+                Enhance data analytics
+                </div>
+              </div>
+            </div>          </div>
           <div>
             <img className="may1" src={may1} />
           </div>
@@ -84,7 +113,7 @@ const MayBank = () => {
             <img className="may5" src={may5} />
           
       </div>
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </>
   );
 };

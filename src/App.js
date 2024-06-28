@@ -24,6 +24,7 @@ import DevopsCase2 from './components/devopsCase2';
 import DevopsCase3 from './components/devopsCase3';
 import DevopsCase4 from './components/devopsCase4';
 import DevopsCase5 from './components/devopsCase5';
+import Careers from './components/Careers';
 
 
 
@@ -53,6 +54,7 @@ const App = () => {
       <Route path="/caseStudies/healthCheck-cs" element={<DevopsCase5 />} />
       <Route path="/contactUs" element={<ContactPage />} />  
       <Route path='/aboutUs' element={<AboutUs />} /> 
+      <Route path='/careers' element={<Careers />} />
     </Routes>
   </Router>
   );

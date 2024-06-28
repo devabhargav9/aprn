@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import itSquad from "../../assets/itSquad.png";
 import cloudImage2 from "../../assets/cloudImage2.svg";
 import arrow from "../../assets/whiteArrow.svg";
@@ -11,33 +11,83 @@ import Testinomials from "../Testinomials";
 import BlogsList from "../BlogsList";
 import Footer from "../Footer";
 import BusinessPotential from "../BusinessPotential";
+import Services from "../Services";
+import { teamsServiceData } from "../../data";
 
 const DevTeams = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const openContact = () => {
+    window.location.href = "/contactUs";
+  };
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer" style={{ backgroundImage: `url(${itSquad})`}}>
-            <div className="headTextSection">
-                <div className="buildText">Expert team delivers innovative solutions</div>
-                <div className="textOneapp">
-                    Clever <span style={{ color: "#002699" }}>IT Squad</span> <br />
-                    Shaping Digital Future
-                </div>
-                <div className="subTextapp">
-                    Our IT team thrives on collaboration, innovation, and problem-solving, ensuring <br />
-                    seamless technology integration and unparalleled support
-                </div>
-                <div className="buttonsContainerapp">
-                    <div className="getTouchapp">
-                        Get in Touch now{" "}
-                        <img src={arrow} alt="arrow" className="arrowapp" />
-                    </div>
-                    <div className="anyQueryapp">Any Query?</div>
-                </div>
+      <div
+        className="AppDevContainer"
+        style={{ backgroundImage: `url(${itSquad})` }}
+      >
+        <div className="headTextSection">
+          <div className="buildText">Assess Deploy Excel</div>
+          <div className="textOneapp">
+            Exceeding expectations <br />
+            by <span style={{ color: "#002699" }}>Delivering Value </span>
+          </div>
+          <div className="subTextapp">
+            Meticulously trained domain experts in dedicated to provide superior
+            development support
+          </div>
+          <div className="buttonsContainerapp">
+            <div
+              className="getTouchapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Get in Touch now{" "}
+              <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
+            <div
+              className="anyQueryapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Any Query?
+            </div>
+          </div>
         </div>
+      </div>
       <ClientsScrollBar />
-      <BusinessPotential diffText={"Dedicated Dev Team"} />
+      <BusinessPotential
+        diffText={"Dedicated Dev Team"}
+        subText1={
+          "With our refined staff augmentation model, hire our skilled IT professionals on a contract basis for short or long-term projects, allowing you to quickly scale your resource pool with zero operational efforts."
+        }
+        subText2={
+          "We are your strategic People partner in building a diverse team when you need the most. Our in-house technologists help you find rare skill sets to meet your needs, delivering a dynamic, team on your timeline."
+        }
+      />
+       <Services
+        services={teamsServiceData}
+        clickable={true}
+        heightFactor={640}
+        topText={"Our latest services"}
+        bigText1={"Our Services"}
+        bigText2={"your organization ahead"}
+        smallText1={
+          "We are pioneers of the digital approach, using leading-edge technology to"
+        }
+        smallText2={
+          "simplify procedures and apply executive for your business."
+        }
+        gridItems={3}
+      />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -45,17 +95,20 @@ const DevTeams = () => {
         subText2={"IT services"}
         subText3={""}
         extraText1={
-          "At APRN, we believe in fostering a work environment that feels more like family. A Culture of Belonging means that every member of our team feels valued, respected, and supported."
+          "We are your strategic partners helping you stay agile in the dynamic market - delivering refined dedicated dev team model, if you are in need of fully managed teams or individual software engineers/ developers, we can provide an immediate resource/ team as required to keep up your business requirements."
         }
         extraText2={
-          "We celebrate our differences through our Employee Resource Groups and learn from each other through mentorship programs. We also enjoy regular team-building activities and social events to build strong bonds."
+          "Our in-house technologists help you find rare skill sets to meet your needs, delivering a dynamic, team on your timeline with a highly cost-effective structure.."
+        }
+        extraText3={
+          "Hire our skilled IT professionals on a contract basis for short or long-term projects, allowing you to quickly scale your resource pool with zero operational efforts."
         }
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </div>
   );
 };

@@ -5,9 +5,6 @@ import arrow from "../../assets/arrow.svg";
 import { blogsList } from "../../data";
 
 const BlogsList = (props) => {
-  useEffect(() => {
-    console.log("Hello Deva");
-  }, []);
 
   return (
     <>

@@ -107,7 +107,7 @@ const HeadNavBar = (props) => {
           <div className="eachCapability" key={index}>
             <img className="capLogo" src={item.logo} alt="cap-logo" />
             <div className="capHead">{item.name}</div>
-            <div className="capTodo">{item.desc}</div>
+            <div className="capTodo" onClick={() => window.location.href = item.redirect_url}>{item.desc}</div>
           </div>
         ))}
       </div>

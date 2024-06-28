@@ -6,25 +6,29 @@ import mainHeaderImage from "../../assets/mainHeader.png";
 import arrow from "../../assets/arrow.svg";
 
 const MainHeader = () => {
+  const openContact = () => {
+    window.location.href='/contactUs';
+  }
   return (
     <div className="MainHeaderContainer">
     <div className="headerContent">
-        <div className="content1">Automate. Integrate. Dominate. </div>
+        <div className="content1">Integrate. Accelerate. Dominate.  </div>
         <div className="content2">
-            Future of DevOps & <br />
-            Mobile Development is Here
+        Empowering growth for<br/>
+modern Businesses with<br/>
+digital enablement<br/>
         </div>
+        <div className="content2-5">Agile | Secure  |  Reliable  |  Scalable</div>
         <div className="content3">
-            We are your one-for-all Business and Technology Consultants,
-            offering customised, <br />
-            secure solutions to suit your project needs.
+        We are empowered to help customers modernize their IT operations, <br />
+        accelerate their business transformations, and build a strong digital core
         </div>
         <div className="buttonsContainer">
-            <div className="getTouch">
+            <div className="getTouch" onClick={() => {openContact()}}>
                 Get in Touch now{" "}
                 <img src={arrow} alt="arrow" className="arrow" />
             </div>
-            <div className="anyQuery">Any Query?</div>
+            <div className="anyQuery" onClick={() => {openContact()}}>Any Query?</div>
         </div>
     </div>
 </div>

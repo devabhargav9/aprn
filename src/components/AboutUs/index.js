@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./aboutUs.css";
 import HeadNavBar from "../HeadNavBar";
 import joinUs from "../../assets/joinUs.svg";
@@ -12,6 +12,13 @@ import aboutCompanyIcon from "../../assets/aboutCompany.png";
 import arrow from "../../assets/blackArrow.svg";
 
 const AboutUs = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="aboutUs">
       <HeadNavBar />
@@ -48,11 +55,12 @@ const AboutUs = () => {
         subText2={"pontential for"}
         subText3={"enterprises worldwide"}
         extraText1={
-          "At APRN, we believe in fostering a work environment that feels more like family. A Culture of Belonging means that every member of our team feels valued, respected, and supported. We have been helping businesses with their IT needs since 2010. We are provide fast, reliable, outsourced onsite and remote IT support services."
+          "APRN is a Digital transformation partner trusted by Fortune 500 Companies across the UK, US & MENA. As a world-class IT solutions provider, we adopt Design thinking with a customer-centric approach to deliver robust Solutions and maximising value for businesses."
         }
         extraText2={
-          "We celebrate our differences through our Employee Resource Groups and learn from each other through mentorship programs. We also enjoy regular team-building activities and social events to build strong bonds."
+          "Over a decade of extensive experience, with our lean agile models, domain expertise and seasoned professionals and we deliver success in comprehensive enterprise software development, IT services, and IT consulting tailored to your business needs while being cost and time effective."
         }
+        extraText3={'At APRN, we believe in creating and delivering value for with our external and internal stakeholders as we cherish the collective growth and success with our highly supportive team.'}
         showCTA={false}
         isAboutUs={true}
       />
@@ -67,7 +75,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={false} />
+      <Footer showAstronaut={false} scrollToServices={scrollToServices}/>
     </div>
   );
 };

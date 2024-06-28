@@ -1,24 +1,31 @@
-.topImage{
-    width: 52px;
-    height: 52px;
-    padding-right: 16px;
+.topImage {
+  width: 52px;
+  height: 52px;
+  padding-right: 16px;
 }
 
-.topRatedContainer{
-    display: flex;
-    align-items: center;
-
+.topRatedContainer {
+  display: flex;
+  align-items: center;
 }
 
-.right, .left{
-    display: flex;
-    align-items: center;
+.right,
+.left {
+  display: flex;
+  align-items: center;
 }
-.stats{
-    text-align: left;
+.stats {
+  text-align: left;
 }
-.center{
-    border: 1px solid #AEAEAE;
-    height: 50px;
-    margin: 0px 24px;
+.center {
+  border: 1px solid #aeaeae;
+  height: 50px;
+  margin: 0px 24px;
+}
+.topSubText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.44px;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
 }

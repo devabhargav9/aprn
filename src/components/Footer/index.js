@@ -15,12 +15,27 @@ const Footer = (props) => {
         <div className="linkHead">{heading}</div>
         <ul className="link-list">
           {elements.map((element, index) => (
-            <ul key={index} className="link">{element} {element === 'Careers' && <span className="hiringButton">Hiring</span>}</ul> 
+            <li
+              key={index}
+              className="link"
+              onClick={() =>
+                element.name === "Capabilities"
+                  ? props.scrollToServices()
+                  : (window.location.href = element.redirect_url)
+              }
+            >
+              {element.name}
+              {element.name === "Career with us" && (
+                <span className="hiringButton">Hiring</span>
+              )}
+            </li>
           ))}
         </ul>
       </div>
     ));
   };
+  
+  
 
 
   return (
@@ -34,18 +49,19 @@ const Footer = (props) => {
         <div className="contactUs">
           <div className="readyText">Ready to get</div>
           <div className="readyTextStart">started?</div>
-          <div className="readyDesc">We’re available for 8 hours a day!</div>
-          <div className="readyDesc">
-            Contact to require a detailed analysis of your plan.
+          <div className="readyDesc">At APRN, our domain expertise helps in creating and delivering value.</div>
+          <div className="weStriveTop">
+          You can also reach us by email - contact@aprn.co.uk
           </div>
-          <div className="emailContainer">
+          <div className="weStrive">We strive to respond to all emails within 24 hours.</div>
+          {/* <div className="emailContainer">
             <input
               type="email"
               name="email"
               placeholder="Enter your email address"
             />
             <div className="sendButton">Send</div>
-          </div>
+          </div> */}
         </div>
       </div>
 }
@@ -61,12 +77,9 @@ const Footer = (props) => {
       </div>
       <div className="copyRightSection">
         <div className="crLHS">
-        <span className="copyRightItem">Privacy</span>
-        <span className="copyRightItem">Security</span>
-        <span className="copyRightItem">User terms</span>
-        <span className="copyRightItem">Customer terms</span>
-        </div>
         <div>©2022 Slite. All rights reserved.</div>
+        </div>
+       
       </div>
     </div>
   );

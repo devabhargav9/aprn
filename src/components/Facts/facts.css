@@ -19,7 +19,7 @@
 
 .facts-container{
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding: 40px 72px 40px 72px;
 }
@@ -39,14 +39,14 @@ height: 31px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .fact-name{
 font-size: 20px;
 font-weight: 600;
 line-height: 24.3px;
-text-align: left;
+text-align: center;
 color: #002699;
 }
 
@@ -55,6 +55,17 @@ font-size: 52px;
 font-weight: 700;
 line-height: 77.76px;
 text-align: left;
-padding: 8px 0px;
+}
+
+.factsRhs{
+  max-width: 650px;
+}
+.factStats{
+font-size: 16px;
+font-weight: 600;
+line-height: 19.44px;
+text-align: right;
+color: rgba(105, 105, 105, 1);
+
 }
 

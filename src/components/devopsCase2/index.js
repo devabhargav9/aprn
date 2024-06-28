@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles.css";
 import cloudcs1 from "../../assets/cloudcs1.png";
 import cloudcs2 from "../../assets/cloudcs2.png";
@@ -9,6 +9,13 @@ import Footer from "../Footer";
 import greenTick from "../../assets/greenTick.svg";
 
 const DevopsCase2 = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <HeadNavBar />
@@ -24,6 +31,28 @@ const DevopsCase2 = () => {
               Cloud first Strategy and
               <br />
               R-Lane
+            </div>
+            <div className="dev1Stats" style={{paddingTop: '36px'}}>
+              <div className="dev1Lhs">
+                <div className="dev1Percent">35%</div>
+                <div className="dev1Text">
+                  Faster Implementation
+                </div>
+              </div>
+              <div className="dev1Mid"></div>
+              <div className="dev1Rhs">
+                <div className="dev1Percent">38%</div>
+                <div className="dev1Text">
+                Reduction in Infrastructure Costs
+                </div>
+              </div>
+              <div className="dev1Mid"></div>
+              <div className="dev1Rhs">
+                <div className="dev1Percent">2x</div>
+                <div className="dev1Text">
+                Reduced Complexity
+                </div>
+              </div>
             </div>
           </div>
           <div>
@@ -96,7 +125,7 @@ const DevopsCase2 = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </>
   );
 };

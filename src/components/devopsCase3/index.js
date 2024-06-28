@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles.css";
 import appcs1 from "../../assets/appcs1.png";
 import appcs2 from "../../assets/appcs2.png";
@@ -9,6 +9,13 @@ import Footer from "../Footer";
 import greenTick from "../../assets/greenTick.svg";
 
 const DevopsCase3 = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <HeadNavBar />
@@ -29,6 +36,28 @@ const DevopsCase3 = () => {
               leveraging ASP .NET MVC , SQL Server and hosted on Microsoft{" "}
               <br />
               Azure.
+            </div>
+            <div className="dev1Stats" style={{paddingTop: '36px'}}>
+              <div className="dev1Lhs">
+                <div className="dev1Percent">30%</div>
+                <div className="dev1Text">
+                Reduction in operational cost
+                </div>
+              </div>
+              <div className="dev1Mid"></div>
+              <div className="dev1Rhs">
+                <div className="dev1Percent">35%</div>
+                <div className="dev1Text">
+                Performance and productivity improvement
+                </div>
+              </div>
+              <div className="dev1Mid"></div>
+              <div className="dev1Rhs">
+                <div className="dev1Percent">40%</div>
+                <div className="dev1Text">
+                Efforts Saving
+                </div>
+              </div>
             </div>
           </div>
           <div>
@@ -128,7 +157,7 @@ const DevopsCase3 = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </>
   );
 };

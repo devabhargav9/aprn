@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles.css";
 import devops1 from "../../assets/devops1-1.png";
 import devops2 from "../../assets/devops1-2.png";
@@ -9,6 +9,13 @@ import HeadNavBar from "../HeadNavBar";
 import Footer from "../Footer";
 
 const DevopsCase1 = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <HeadNavBar />
@@ -29,18 +36,23 @@ const DevopsCase1 = () => {
             </div>
             <div className="dev1Stats">
               <div className="dev1Lhs">
-                <div className="dev1Percent">60%</div>
+                <div className="dev1Percent">42%</div>
                 <div className="dev1Text">
-                  Reduction in storage <br />
-                  footprint
+                  Cost reduction in hosting infrastructure
                 </div>
               </div>
               <div className="dev1Mid"></div>
               <div className="dev1Rhs">
-                <div className="dev1Percent">5Min</div>
+                <div className="dev1Percent">3x</div>
                 <div className="dev1Text">
-                  Time taken to reset <br />
-                  test data sets
+                Time saved on manual operational requests
+                </div>
+              </div>
+              <div className="dev1Mid"></div>
+              <div className="dev1Rhs">
+                <div className="dev1Percent">30%</div>
+                <div className="dev1Text">
+                Performance and productivity improvement
                 </div>
               </div>
             </div>
@@ -197,7 +209,7 @@ const DevopsCase1 = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </>
   );
 };

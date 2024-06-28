@@ -33,3 +33,37 @@ text-align: center;
 color: #696969;
 padding: 24px 0px 16px 0px;
 }
+
+.clientsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1000px;
+  height: 676px;
+  margin: 0px auto;
+  padding-bottom: 60px;
+}
+
+.clientItem {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.clientItem:nth-child(4n) {
+  border-right: none;
+}
+
+.clientItem:nth-last-child(-n + 4) {
+  border-bottom: none;
+}
+
+.clientItem img {
+  width: 147px;
+  height: 82px;
+}
+
+

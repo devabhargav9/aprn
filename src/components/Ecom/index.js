@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import ecomImage from "../../assets/ecomImage.png";
 import cloudImage2 from "../../assets/cloudImage2.svg";
 import arrow from "../../assets/whiteArrow.svg";
@@ -11,8 +11,21 @@ import Testinomials from "../Testinomials";
 import BlogsList from "../BlogsList";
 import Footer from "../Footer";
 import BusinessPotential from "../BusinessPotential";
+import Services from "../Services";
+import { ecomScrollData, ecomServiceData } from "../../data";
+import ScrollableComponent from "../IntersectionScroller";
 
 const Ecom = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const openContact = () => {
+    window.location.href = "/contactUs";
+  };
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
@@ -21,30 +34,63 @@ const Ecom = () => {
         style={{ backgroundImage: `url(${ecomImage})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">
-            Effortless Integration, Endless Expansion
-          </div>
+          <div className="buildText">Customers Marketing Experience</div>
           <div className="textOneapp">
-            Forge Your Path to <br />
-            <span style={{ color: "#002699" }}>Online Market </span>Success
+            Connecting <span style={{ color: "#002699" }}>Consumers, </span><br />
+            retailers and brands 
           </div>
           <div className="subTextapp">
-            Unleash the potential of your online store with our E-Commerce
-            Services, <br />
-            automating tasks, enhancing software quality, and boosting
-            reliability.
+            Helping e-commerce brands understand customer behavior by creating
+            smarter <br />
+            solutions for targeted audiences
           </div>
           <div className="buttonsContainerapp">
-            <div className="getTouchapp">
+            <div
+              className="getTouchapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
               Get in Touch now{" "}
               <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
-            <div className="anyQueryapp">Any Query?</div>
+            <div
+              className="anyQueryapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Any Query?
+            </div>
           </div>
         </div>
       </div>
       <ClientsScrollBar />
-      <BusinessPotential diffText={"E-commerce Services"} />
+      <BusinessPotential
+        diffText={"E-commerce Services"}
+        subText1={
+          "As a Customer-centric organization, we offer technology solutions both conventional and Saas based models for our global e-commerce customers. E-commerce businesses of any size can gain advantage in maximizing their ROIs on digital platforms."
+        }
+        subText2={
+          "Implementing AI to bring all e-commerce operations in one-place including warehouses, inventory and market places to help clients become more competitive and are informed about their future need."
+        }
+      />
+      <Services
+        services={ecomServiceData}
+        clickable={true}
+        heightFactor={640}
+        topText={"Our latest services"}
+        bigText1={"Our Services"}
+        bigText2={"your organization ahead"}
+        smallText1={
+          "We are pioneers of the digital approach, using leading-edge technology to"
+        }
+        smallText2={
+          "simplify procedures and apply executive for your business."
+        }
+        gridItems={3}
+      />
+
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -52,17 +98,22 @@ const Ecom = () => {
         subText2={"IT services"}
         subText3={""}
         extraText1={
-          "At APRN, we believe in fostering a work environment that feels more like family. A Culture of Belonging means that every member of our team feels valued, respected, and supported."
+          "E-commerce industry is booming with an exponential growth hence we focus on the need of a strong digital core for our clients thus creating an engaging and immersive customer experience while supporting our clients become more competitive and informed about their future need."
         }
         extraText2={
-          "We celebrate our differences through our Employee Resource Groups and learn from each other through mentorship programs. We also enjoy regular team-building activities and social events to build strong bonds."
+          "As a customer-centric organization, we offer technology solutions both conventional and SaaS based models. E-commerce businesses of any size can gain advantage in maximizing their ROIs on digital platforms."
+        }
+        extraText3={
+          "APRN is empowered to help customers modernize their IT operations, enhancing their business operations and transformations, and build a strong digital core."
         }
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
+            <ScrollableComponent data={ecomScrollData}/>
+
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </div>
   );
 };

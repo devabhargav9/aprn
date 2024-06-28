@@ -5,10 +5,6 @@ import arrow from "../../assets/whiteArrow.svg";
 
 
 const AboutCompany = (props) => {
-  useEffect(() => {
-    console.log("Hello Deva");
-  }, []);
-
   const handleLearnMore  = () => {
     window.location.href = '/aboutUs';
   }
@@ -30,8 +26,9 @@ const AboutCompany = (props) => {
       <div className="extraContent">
         { props.extraHeader && <div className="extraHeader">{props.extraHeader}</div>}
         <div className="extraContent1">{props.extraText1}</div>
-        <br/>
         <div className="extraContent2">{props.extraText2}</div>
+        {props.extraText3 && <div className="extraContent2">{props.extraText3}</div>}
+        {props.extraText4 &&<div className="extraContent2">{props.extraText4}</div>}
         {props.showCTA && <div className="learnMore" onClick={() => handleLearnMore()}>Learn More <img src={arrow} className="whiteArrow" /></div>}
       </div>
      </div>

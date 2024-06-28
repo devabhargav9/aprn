@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './contact.css';
+import AboutCompany from '../AboutCompany';
+import chooseUsIcon from "../../assets/chooseUs.png";
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,61 +22,26 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <div className='header'>Contact us</div>
-      <div className='subText'>Get in Touch with Us Today!</div>
-      <div className='namesContainer'>
-        <div>
-          <label htmlFor="firstName">First name</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            className="styled-input" // Use className instead of class
-            value={formData.firstName}
-            onChange={handleChange}
-            placeholder='Jane'
-          />
-        </div>
-        <div>
-          <label htmlFor="lastName">Last name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            className="styled-input" // Use className instead of class
-            value={formData.lastName}
-            onChange={handleChange}
-            placeholder='Smitherton'
-          />
-        </div>
-      </div>
-      <label htmlFor="email">Email address</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        className="styled-input-email" // Use className instead of class
-        value={formData.email}
-        onChange={handleChange}
-        placeholder='email@janesfakedomain.net'
+
+    <AboutCompany
+        placeHolderImg={chooseUsIcon}
+        headText={"Why choose us"}
+        subText1={"Accelerate your"}
+        subText2={"Growth!"}
+        subText3={""}
+        extraText1={
+          "We are empowered to help customers modernize their IT operations, enhancing their business operations and transformations, and build a strong digital core."
+        }
+        extraText2={
+          "Our are focused in providing acclerated gorwth, customer-centric solutions, and flexible approaches that are specifically rightsized for the needs of emerging mid-market and small enterprise customers."
+        }
+        extraText3={'Streamlined the processes, and established a strong reputation for consistently delivering superior  outcomes powered with the certifed techincal team of experts. Maintaining transparent and effective communication channels.'}
+        showCTA={false}
+        extraHeader={"Why Choose us?"}
       />
-      <div className='dummyDiv'></div>
-      <label htmlFor="message">Your message</label>
-      <textarea
-        id="message"
-        name="message"
-        className="styled-input" // Use className instead of class
-        value={formData.message}
-        onChange={handleChange}
-        placeholder='Enter your question or message here..'
-      />
-      <button type="submit">Submit</button>
-    </form>
   );
 };
 

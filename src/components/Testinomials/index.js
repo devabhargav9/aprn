@@ -6,9 +6,6 @@ import { testinomials } from "../../data";
 import Carousel from "../Carousel";
 
 const Testinomials = (props) => {
-  useEffect(() => {
-    console.log("Hello Deva");
-  }, []);
 
   return (
     <div className="testinomialContainer">

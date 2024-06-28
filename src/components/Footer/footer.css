@@ -23,7 +23,7 @@
 
 .contactUs {
   position: absolute;
-  top: 7%;
+  top: 9%;
   left: 60%;
   width: 30%;
   padding: 20px;
@@ -51,6 +51,13 @@
   font-weight: 400;
   line-height: 32px;
   text-align: left;
+}
+.weStriveTop{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  padding: 20px 8px 0px 0px;
 }
 
 .emailContainer {
@@ -129,7 +136,7 @@ input[type="email"]:focus {
   line-height: 23.52px;
 }
 .eachLinkSection {
-  padding-right: 56px;
+  padding-left: 56px;
   text-align: left;
 }
 
@@ -164,4 +171,12 @@ input[type="email"]:focus {
   text-align: left;
   border-radius: 96px;
   margin-left: 8px;
+}
+.weStrive{
+font-size: 14px;
+font-weight: 400;
+line-height: 17.01px;
+text-align: left;
+color: rgba(255, 255, 255, 0.75);
+
 }

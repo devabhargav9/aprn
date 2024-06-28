@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import cloudImage from "../../assets/cloudImage.png";
 import cloudImage2 from "../../assets/cloudImage2.svg";
 
@@ -12,10 +12,21 @@ import Testinomials from "../Testinomials";
 import BlogsList from "../BlogsList";
 import Footer from "../Footer";
 import BusinessPotential from "../BusinessPotential";
-import { cloudServiceData } from "../../data";
+import { cloudScrollData, cloudServiceData } from "../../data";
 import Services from "../Services";
+import ScrollableComponent from "../IntersectionScroller";
 
 const CloudService = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const openContact = () => {
+    window.location.href='/contactUs';
+  }
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
@@ -28,21 +39,21 @@ const CloudService = () => {
                     <span className="textTwoapp">Cloud Solutions</span>
                 </div>
                 <div className="subTextapp">
-                    Our Cloud solutions streamline processes by automating tasks,<br />
-                    enhancing software quality, and boosting reliability.
+                Creating an optimal cloud strategy, streamline IT architecture, and<br />
+                achieve desired business results
                 </div>
                 <div className="buttonsContainerapp">
-                    <div className="getTouchapp">
+                    <div className="getTouchapp" onClick={() => {openContact()}}>
                         Get in Touch now{" "}
                         <img src={arrow} alt="arrow" className="arrowapp" />
                     </div>
-                    <div className="anyQueryapp">Any Query?</div>
+                    <div className="anyQueryapp" onClick={() => {openContact()}}>Any Query?</div>
                 </div>
             </div>
         </div>
       <ClientsScrollBar />
-      <BusinessPotential diffText={"Cloud Solutions"} />
-      <Services services={cloudServiceData} clickable={true} heightFactor={975} topText={'Our latest services'} bigText1={'Services that help keep'} bigText2={'your organization ahead'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
+      <BusinessPotential diffText={"Cloud Solutions"} subText1={'Take advantage of our cloud computing solutions to streamline your processes, enhance scalability and flexibility, and reduce IT costs. We work with leading cloud providers such as Microsoft Azure, AWS, and GCP.'} subText2={'We help Companies become digitally transformed by leveraging a cloud-first approach to increase efficiency, unleash new capabilities, and quickly create, richer, and scalable applications'}/>
+      <Services services={cloudServiceData} clickable={true} heightFactor={975} topText={'Our latest services'} bigText1={'Our Services'} bigText2={'your organization ahead'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -50,17 +61,22 @@ const CloudService = () => {
         subText2={"IT services"}
         subText3={""}
         extraText1={
-          "At APRN, we believe in fostering a work environment that feels more like family. A Culture of Belonging means that every member of our team feels valued, respected, and supported."
+          "Optimize the migration and modernization scope with APRN's framework for cost optimization strategies, transformation services, and flexible approaches that are rightsized for your business. Take advantage of our cloud computing solutions to streamline your processes, enhance scalability and flexibility, and reduce IT costs. We work with leading cloud providers such as Microsoft Azure, AWS, and GCP."
         }
         extraText2={
-          "We celebrate our differences through our Employee Resource Groups and learn from each other through mentorship programs. We also enjoy regular team-building activities and social events to build strong bonds."
+          "We help Companies become digitally transformed by leveraging a cloud-first approach to increase efficiency, unleash new capabilities, and quickly create, richer, and scalable applications."
+        }
+        extraText3={
+          "APRN is empowered to help customers modernize their IT operations, enhancing their business operations and transformations, and build a strong digital core."
         }
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
+      <ScrollableComponent data={cloudScrollData}/>
+
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </div>
   );
 };

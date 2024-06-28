@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles.css";
 import devops51 from "../../assets/devops5-1.png";
 import devops52 from "../../assets/devops5-2.png";
@@ -8,6 +8,13 @@ import Footer from "../Footer";
 import greenTick from "../../assets/greenTick.svg";
 
 const DevopsCase5 = () => {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <HeadNavBar />
@@ -30,20 +37,20 @@ const DevopsCase5 = () => {
           </div>
           <div className="dev1Stats">
             <div className="dev1Lhs">
-              <div className="dev1Percent">37%</div>
+              <div className="dev2Percent">37%</div>
               <div className="dev1Text" style={{textAlign: 'center'}}>
-                Performance and <br />
+                Performance and
                 productivity improvement
               </div>
             </div>
             <div className="dev1Mid"></div>
             <div className="dev1Rhs">
-              <div className="dev1Percent">40%</div>
+              <div className="dev2Percent">40%</div>
               <div className="dev1Text">Efforts saving </div>
             </div>
             <div className="dev1Mid"></div>
             <div className="dev1Rhs">
-              <div className="dev1Percent">30%</div>
+              <div className="dev2Percent">30%</div>
               <div className="dev1Text">Faster speed to market</div>
             </div>
           </div>
@@ -116,7 +123,7 @@ const DevopsCase5 = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </>
   );
 };

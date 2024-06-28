@@ -52,6 +52,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: fit-content;
 }
 
 .anyQuery {
@@ -77,4 +78,12 @@
   width: 14px;
   height: 14px;
   padding-left: 10px;
+}
+
+.content2-5{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34.02px;
+  text-align: center;
+  padding-bottom: 16px;
 }

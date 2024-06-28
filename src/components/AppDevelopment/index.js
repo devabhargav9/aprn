@@ -24,7 +24,16 @@ const AppDevelopment = () => {
   const scrollableComponentRef = useRef(null);
   const [isScrollableComponentVisible, setIsScrollableComponentVisible] = useState(false);
   const [isScrollableComponentScrolledToEnd, setIsScrollableComponentScrolledToEnd] = useState(false);
+  const servicesRef = useRef(null);
 
+  const scrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const openContact = () => {
+    window.location.href='/contactUs';
+  }
   useEffect(() => {
     const handleScroll = () => {
       const mainContainerTop = mainContainerRef.current.offsetTop;
@@ -57,35 +66,35 @@ const AppDevelopment = () => {
         <HeadNavBar />
       <div className="AppDevContainer" style={{ backgroundImage: `url(${addDevPage})` }}>
         <div className="headTextSection">
+        <div className="buildText">Ideate Integrate Execute</div>
           <div className="textOneapp">
-            Futuristic <br />
-            Approach to <br />
-            <span className="textTwoapp">App Modernisation</span>
+          <span className="textTwoapp">Engineering Mobile</span> &  <br />
+          Progressive Web Apps <br />
+           
           </div>
           <div className="subTextapp">
-            We are your one-for-all Business and Technology Consultants,
-            offering customised, <br />
+          Custom application development to drive operational efficiency, <br />enhance customer engagement, and foster mobility and growth
             secure solutions to suit your project needs.
           </div>
           <div className="buttonsContainerapp">
-            <div className="getTouchapp">
+            <div className="getTouchapp" onClick={() => {openContact()}}>
               Get in Touch now{" "}
               <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
-            <div className="anyQueryapp">Any Query?</div>
+            <div className="anyQueryapp" onClick={() => {openContact()}}>Any Query?</div>
           </div>
         </div>
       </div>
 
       <ClientsScrollBar />
-      <BusinessPotential diffText={"App Development"} />
+      <BusinessPotential diffText={"App Solutions"} subText1={'Building Custom applications with the power of design thinking & a responsive approach to unleash the potential of enterprises with a customer-centric approach to drive innovation & business growth.'} subText2={'Our Custom application development aims to develop, and maintain applications & systems to improve functionality and scalability, reduce costs, and enhance the overall customer experience on multiple platforms'}/>
       <Services
         services={AppDevServiceData}
         clickable={true}
         isAppDev={true}
         heightFactor={640}
         topText={"Our latest services"}
-        bigText1={"Services that help keep"}
+        bigText1={"Our services"}
         bigText2={"your organization secure"}
         smallText1={"We are pioneers of the digital approach, using leading-edge technology to"}
         smallText2={"simplify procedures and apply executive for your business."}
@@ -98,18 +107,19 @@ const AppDevelopment = () => {
         subText2={"IT services"}
         subText3={""}
         extraText1={
-          "At APRN, we believe in fostering a work environment that feels more like family. A Culture of Belonging means that every member of our team feels valued, respected, and supported."
+          "In today’s highly competitive digital world, we strongly believe that apps need to be highly strategized, customized and to be implemented seamlessly enriching customer experience with immersive app functionality thus leading to accelerated business growth. "
         }
         extraText2={
-          "We celebrate our differences through our Employee Resource Groups and learn from each other through mentorship programs. We also enjoy regular team-building activities and social events to build strong bonds."
+          "We offer a full cycle of application design, integration and management services. Whether it is a consumer-oriented app or a transformative enterprise-class solution, we at APRN manage end-to-end mobile app development process from ideation and concept to delivery, and to ongoing support."
         }
+        extraText3={'APRN is empowered to help customers modernize their IT operations, enhancing their business operations and transformations, and build a strong digital core.'}
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
       <ScrollableComponent ref={scrollableComponentRef} isVisible={isScrollableComponentVisible} isScrolledToEnd={isScrollableComponentScrolledToEnd} data={appScrollData}/>
 
       
-      <Footer showAstronaut={true} />
+      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
     </div>
   );
 };

@@ -1,24 +1,31 @@
 import React from "react";
 import "./styles.css";
-import growthImg from '../../assets/grow.svg';
-import topRated from '../../assets/topRated.svg';
 
-const TopRated = () => {
+
+const TopRated = (props) => {
   return (
+    <div>
     <div className="topRatedContainer">
       <div className="left">
-        <img src={topRated} className="topImage" />
+        <img src={props.icon1} className="topImage" />
         <div className="stats">
-            <div className="topText">Top Rated</div>
-            <div className="topSubText">App on Appstore</div>
+            <div className="topText">{props.stat1}</div>
+            <div className="topSubText">{props.text1}</div>
         </div>
         </div>
         <div className="center"></div>
         <div className="right">
-        <img src={growthImg} className="topImage" />
+        <img src={props.icon2} className="topImage" />
         <div className="stats">
-            <div className="topText">90%</div>
-            <div className="topSubText">Client got 90% of noticeable growth</div>
+            <div className="topText">{props.stat2}</div>
+            <div className="topSubText">{props.text2}</div>
+        </div>
+        </div>
+    </div>
+    <div className="right" style={{paddingTop: '15px'}}>
+        <img src={props.icon3} className="topImage" />
+        <div className="stats">
+            <div className="topSubText" style={{width: '70%'}}>{props.text3}</div>
         </div>
         </div>
     </div>

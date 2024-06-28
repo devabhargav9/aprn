@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './scroller.scss'; // Adjust the path as per your file structure
+import arrow from "../../assets/arrow.svg";
+
 
 const ScrollableComponent = ({ data }) => {
   const containerRef = useRef(null);
@@ -14,6 +16,10 @@ const ScrollableComponent = ({ data }) => {
       };
     }
   }, []);
+
+  const openCaseStudies = () => {
+    window.location.href="/caseStudies"
+  }
 
   const handleScroll = () => {
     const container = containerRef.current;
@@ -51,6 +57,16 @@ const ScrollableComponent = ({ data }) => {
       <div className="scrollableContainer" ref={containerRef}>
         <article>{renderImages()}</article>
       </div>
+      <div
+                  className="getTouchScroll"
+                  onClick={() => {
+                  openCaseStudies();
+                  }}
+                  style={{marginTop: '36px'}}
+                >
+                  View All Case Studies{" "}
+                  <img src={arrow} alt="arrrow" className="arrowapp" />{" "}
+                </div>
     </div>
   );
 };
