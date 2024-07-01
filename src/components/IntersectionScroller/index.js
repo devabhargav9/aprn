@@ -2,36 +2,38 @@ import React, { useEffect, useRef } from 'react';
 import './scroller.scss'; // Adjust the path as per your file structure
 import arrow from "../../assets/arrow.svg";
 
-
-const ScrollableComponent = ({ data }) => {
+const ScrollableComponent = ({ data, setScrolling }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    if (containerRef.current) {
-      // Detect when all items are scrolled fully
-      containerRef.current.addEventListener('scroll', handleScroll);
+    const container = containerRef.current;
 
-      return () => {
-        containerRef.current.removeEventListener('scroll', handleScroll);
-      };
+    const handleScroll = () => {
+      if (container) {
+        const isScrollable = container.scrollHeight - container.clientHeight <= container.scrollTop;
+        if (isScrollable) {
+          container.style.overflowY = 'hidden'; // Disable further scrolling
+          setScrolling(false);
+        } else {
+          container.style.overflowY = 'auto'; // Enable scrolling
+          setScrolling(true);
+        }
+      }
+    };
+
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
     }
-  }, []);
+
+    return () => {
+      if (container) {
+        container.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [setScrolling]);
 
   const openCaseStudies = () => {
-    window.location.href="/caseStudies"
-  }
-
-  const handleScroll = () => {
-    const container = containerRef.current;
-    if (container) {
-      // Check if all items are scrolled fully
-      const isScrollable = container.scrollHeight - container.clientHeight <= container.scrollTop;
-      if (isScrollable) {
-        container.style.overflowY = 'hidden'; // Disable further scrolling
-      } else {
-        container.style.overflowY = 'auto'; // Enable scrolling
-      }
-    }
+    window.location.href = "/caseStudies";
   };
 
   const renderImages = () => {
@@ -42,10 +44,9 @@ const ScrollableComponent = ({ data }) => {
             <img src={img} alt={`Image ${index}`} />
           </figure>
         ))}
-         <figure>
-         <div className="end-of-scroll"></div> {/* Transparent div at the end */}
-
-          </figure>
+        <figure>
+          <div className="end-of-scroll"></div> {/* Transparent div at the end */}
+        </figure>
       </>
     );
   };
@@ -53,20 +54,18 @@ const ScrollableComponent = ({ data }) => {
   return (
     <div>
       <div className='caseHead'>Case Studies</div>
-      <div className='caseSub'>See How we Built <br/>Top Quality Products</div>
+      <div className='caseSub'>See How we Built <br />Top Quality Products</div>
       <div className="scrollableContainer" ref={containerRef}>
         <article>{renderImages()}</article>
       </div>
       <div
-                  className="getTouchScroll"
-                  onClick={() => {
-                  openCaseStudies();
-                  }}
-                  style={{marginTop: '36px'}}
-                >
-                  View All Case Studies{" "}
-                  <img src={arrow} alt="arrrow" className="arrowapp" />{" "}
-                </div>
+        className="getTouchScroll"
+        onClick={openCaseStudies}
+        style={{ marginTop: '36px' }}
+      >
+        View All Case Studies
+        <img src={arrow} alt="arrow" className="arrowapp" />
+      </div>
     </div>
   );
 };

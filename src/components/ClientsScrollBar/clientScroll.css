@@ -1,7 +1,7 @@
 .carousel-container {
   /* width: 100%; */
   overflow: hidden;
-  padding: 0px 16px 10px 16px;
+  padding: 16px 16px 10px 16px;
   position: relative;
   cursor: pointer;
 }

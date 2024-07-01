@@ -28,9 +28,11 @@
 .content2 {
   font-size: 68px;
   font-weight: 700;
-  line-height: 96px;
-  padding: 12px 0px;
+  line-height: 82px;
+  padding-top: 12px;
+  padding-bottom: 20px;
   color: #fff;
+  
 }
 
 .content3 {

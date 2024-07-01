@@ -73,13 +73,13 @@ const Services = (props) => {
               className={`tab ${activeTab === "enterprise" ? "active" : ""}`}
               onClick={handleTab1}
             >
-              Enterprise
+              Enterprise Application
             </button>
             <button
               className={`tab ${activeTab === "software" ? "active" : ""}`}
               onClick={handleTab2}
             >
-              Software
+              Software Product
             </button>
           </div>
         </div>

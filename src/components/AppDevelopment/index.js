@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import React, { useRef, useEffect, useState } from "react";
 import addDevPage from "../../assets/appDevPage.png";
 import arrow from "../../assets/whiteArrow.svg";
@@ -20,74 +13,56 @@ import { AppDevServiceData, appScrollData } from "../../data";
 import ScrollableComponent from "../IntersectionScroller";
 
 const AppDevelopment = () => {
+  const [isScrolling, setScrolling] = useState(true);
   const mainContainerRef = useRef(null);
-  const scrollableComponentRef = useRef(null);
-  const [isScrollableComponentVisible, setIsScrollableComponentVisible] = useState(false);
-  const [isScrollableComponentScrolledToEnd, setIsScrollableComponentScrolledToEnd] = useState(false);
   const servicesRef = useRef(null);
+
+  useEffect(() => {
+    if (mainContainerRef.current) {
+      mainContainerRef.current.style.overflowY = isScrolling ? 'auto' : 'hidden';
+    }
+  }, [isScrolling]);
 
   const scrollToServices = () => {
     if (servicesRef.current) {
       servicesRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   const openContact = () => {
-    window.location.href='/contactUs';
-  }
-  useEffect(() => {
-    const handleScroll = () => {
-      const mainContainerTop = mainContainerRef.current.offsetTop;
-      const scrollableComponentTop = scrollableComponentRef.current.offsetTop;
-      const scrollableComponentHeight = scrollableComponentRef.current.offsetHeight;
-      const mainContainerScrollTop = mainContainerRef.current.scrollTop;
-
-      if (mainContainerScrollTop >= scrollableComponentTop - mainContainerTop) {
-        setIsScrollableComponentVisible(true);
-      } else {
-        setIsScrollableComponentVisible(false);
-      }
-
-      if (isScrollableComponentVisible && mainContainerScrollTop >= scrollableComponentTop - mainContainerTop + scrollableComponentHeight) {
-        setIsScrollableComponentScrolledToEnd(true);
-      } else {
-        setIsScrollableComponentScrolledToEnd(false);
-      }
-    };
-
-    mainContainerRef.current.addEventListener('scroll', handleScroll);
-
-    return () => {
-      mainContainerRef.current.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    window.location.href = '/contactUs';
+  };
 
   return (
     <div className="appDevWrapper" ref={mainContainerRef}>
-        <HeadNavBar />
+      <HeadNavBar />
       <div className="AppDevContainer" style={{ backgroundImage: `url(${addDevPage})` }}>
         <div className="headTextSection">
-        <div className="buildText">Ideate Integrate Execute</div>
+          <div className="buildText">Ideate Integrate Execute</div>
           <div className="textOneapp">
-          <span className="textTwoapp">Engineering Mobile</span> &  <br />
-          Progressive Web Apps <br />
-           
+            <span className="textTwoapp">Engineering Mobile</span> & <br />
+            Progressive Web Apps <br />
           </div>
           <div className="subTextapp">
-          Custom application development to drive operational efficiency, <br />enhance customer engagement, and foster mobility and growth
+            Custom application development to drive operational efficiency, <br />enhance customer engagement, and foster mobility and growth
             secure solutions to suit your project needs.
           </div>
           <div className="buttonsContainerapp">
-            <div className="getTouchapp" onClick={() => {openContact()}}>
+            <div className="getTouchapp" onClick={openContact}>
               Get in Touch now{" "}
               <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
-            <div className="anyQueryapp" onClick={() => {openContact()}}>Any Query?</div>
+            <div className="anyQueryapp" onClick={openContact}>Any Query?</div>
           </div>
         </div>
       </div>
 
       <ClientsScrollBar />
-      <BusinessPotential diffText={"App Solutions"} subText1={'Building Custom applications with the power of design thinking & a responsive approach to unleash the potential of enterprises with a customer-centric approach to drive innovation & business growth.'} subText2={'Our Custom application development aims to develop, and maintain applications & systems to improve functionality and scalability, reduce costs, and enhance the overall customer experience on multiple platforms'}/>
+      <BusinessPotential 
+        diffText={"App Solutions"} 
+        subText1={'Building Custom applications with the power of design thinking & a responsive approach to unleash the potential of enterprises with a customer-centric approach to drive innovation & business growth.'} 
+        subText2={'Our Custom application development aims to develop, and maintain applications & systems to improve functionality and scalability, reduce costs, and enhance the overall customer experience on multiple platforms'}
+      />
       <Services
         services={AppDevServiceData}
         clickable={true}
@@ -100,7 +75,7 @@ const AppDevelopment = () => {
         smallText2={"simplify procedures and apply executive for your business."}
         showToggle={true}
       />
-<AboutCompany
+      <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
         subText1={"We promise high quality"}
@@ -116,10 +91,9 @@ const AppDevelopment = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <ScrollableComponent ref={scrollableComponentRef} isVisible={isScrollableComponentVisible} isScrolledToEnd={isScrollableComponentScrolledToEnd} data={appScrollData}/>
+      <ScrollableComponent data={appScrollData} setScrolling={setScrolling} />
 
-      
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </div>
   );
 };

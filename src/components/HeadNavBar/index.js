@@ -66,6 +66,7 @@ const HeadNavBar = (props) => {
             src={navBarcolorWhite() ? aprnLogoWhite : aprnLogo}
             alt="APRN Logo"
             className="aprnLogo"
+            onClick={() => {window.location.href = '/'}}
           />
           {navBarItems.map((item, index) => (
             <div

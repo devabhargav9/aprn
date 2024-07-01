@@ -70,6 +70,7 @@ const Footer = (props) => {
           src={aprnLogo}
           alt="APRN Logo"
           className="aprnLogo"
+          onClick={() => {window.location.href = '/'}}
         />
         <div className="linksSection">
         {renderLinks()}
@@ -77,7 +78,7 @@ const Footer = (props) => {
       </div>
       <div className="copyRightSection">
         <div className="crLHS">
-        <div>©2022 Slite. All rights reserved.</div>
+        <div>©2024 APRN. All rights reserved.</div>
         </div>
        
       </div>
