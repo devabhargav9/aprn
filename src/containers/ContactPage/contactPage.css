@@ -1,41 +1,38 @@
-
-
 .contactUsIcon {
   width: 578px;
   height: 657px;
   border-radius: 20px;
 }
 
-.conHead{
-font-size: 64px;
-font-weight: 700;
-line-height: 63px;
-letter-spacing: -0.02em;
-text-align: center;
-color: rgba(0, 0, 0, 1);
-padding-top: 110px;
+.conHead {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  padding-top: 110px;
 }
-.conSub{
-font-size: 16px;
-font-weight: 500;
-line-height: 22px;
-letter-spacing: -0.02em;
-text-align: center;
-color: rgba(105, 105, 105, 1);
-padding-top: 10px;
+.conSub {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(105, 105, 105, 1);
+  padding-top: 10px;
 }
-.conEmail{
-font-size: 24px;
-font-weight: 400;
-line-height: 29.16px;
-text-align: center;
-padding-top: 30px;
+.conEmail {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.16px;
+  text-align: center;
+  padding-top: 30px;
 }
-.conLast{
-font-size: 14px;
-font-weight: 400;
-line-height: 17.01px;
-text-align: center;
-padding-bottom: 40px;
-
+.conLast {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.01px;
+  text-align: center;
+  padding-bottom: 40px;
 }

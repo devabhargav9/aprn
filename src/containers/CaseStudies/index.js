@@ -19,11 +19,11 @@ const CaseStudiesHome = () => {
   };
   return (
     <div className="WebContainer">
-        <div className="semiCircle"></div>
+      <div className="semiCircle"></div>
 
       <HeadNavBar />
       <CaseStudiesSection />
-      <ClientsScrollBar showHeader={true}/>
+      <ClientsScrollBar showHeader={true} />
       <AboutCompany
         placeHolderImg={aboutCompanyIcon}
         headText={"About our company"}
@@ -36,12 +36,13 @@ const CaseStudiesHome = () => {
         extraText2={
           "Over a decade of extensive experience, with our lean agile models, domain expertise and seasoned professionals and we deliver success in comprehensive enterprise software development, IT services, and IT consulting tailored to your business needs while being cost and time effective."
         }
-        extraText3={'At APRN, we believe in creating and delivering value for with our external and internal stakeholders as we cherish the collective growth and success with our highly supportive team.'}
+        extraText3={
+          "At APRN, we believe in creating and delivering value for with our external and internal stakeholders as we cherish the collective growth and success with our highly supportive team."
+        }
         showCTA={true}
         isAboutUs={true}
-
       />
-      <Footer showAstronaut={false} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={false} scrollToServices={scrollToServices} />
     </div>
   );
 };

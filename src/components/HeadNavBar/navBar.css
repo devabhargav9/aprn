@@ -7,11 +7,10 @@
   transition: background-color 0.4s ease-in-out;
 }
 
-.topNavigationBar{
+.topNavigationBar {
   position: fixed;
   z-index: 2;
   width: -webkit-fill-available;
-
 }
 
 .navBarContainer {
@@ -135,15 +134,15 @@
   color: #fff;
 }
 
-.capabilitiesHead{
-font-size: 24px;
-font-weight: 700;
-line-height: 29.16px;
-text-align: left;
-color: #000000;
+.capabilitiesHead {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.16px;
+  text-align: left;
+  color: #000000;
 }
 
-.eachCapability{
+.eachCapability {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -152,7 +151,7 @@ color: #000000;
   padding-right: 52px;
 }
 
-.bottomBarContainer{
+.bottomBarContainer {
   background-color: #fff;
   padding: 24px 72px 8px 72px;
   height: 512px;
@@ -170,19 +169,18 @@ color: #000000;
   margin-bottom: 32px;
 }
 
-.capHead{
+.capHead {
   padding: 16px 0px 8px 0px;
-font-size: 20px;
-font-weight: 600;
-line-height: 24.3px;
-text-align: left;
-
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.3px;
+  text-align: left;
 }
-.capTodo{
-font-size: 15px;
-font-weight: 500;
-line-height: 18.23px;
-text-align: left;
-color: #002699;
-cursor: pointer;
+.capTodo {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.23px;
+  text-align: left;
+  color: #002699;
+  cursor: pointer;
 }

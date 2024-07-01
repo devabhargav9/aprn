@@ -7,10 +7,12 @@ import app2 from "../../../src/assets/software2.svg";
 import app3 from "../../../src/assets/software3.svg";
 import app4 from "../../../src/assets/software3.svg";
 import arrow from "../../assets/arrow.svg";
+import whiteArrow from "../../assets/whiteArrow.svg";
 
 const Services = (props) => {
   const [activeTab, setActiveTab] = useState("enterprise");
   const [displayedServices, setDisplayedServices] = useState(props.services);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleTab1 = () => setActiveTab("enterprise");
   const handleTab2 = () => setActiveTab("software");
@@ -41,8 +43,8 @@ const Services = (props) => {
     },
     {
       name: "Contact US",
-      desc: "Curious what’s the optimal development process for your product and challenges?"
-    }
+      desc: "Curious what’s the optimal development process for your product and challenges?",
+    },
   ];
 
   useEffect(() => {
@@ -96,16 +98,25 @@ const Services = (props) => {
         {displayedServices &&
           displayedServices.map((service, index) => (
             <div
-            key={index}
-            className={props.clickable ? "service" : "noClickService"}
-            onClick={() => {
-              if (service.redirect_url) {
-                window.location.href = service.redirect_url;
+              key={index}
+              className={service.logo ? "service" : "noClickService"}
+              onClick={() => {
+                if (service.redirect_url) {
+                  window.location.href = service.redirect_url;
+                }
+              }}
+              onMouseEnter={() => !service.logo && setIsHovered(true)}
+              onMouseLeave={() => !service.logo && setIsHovered(false)}
+              style={
+                service.logo
+                  ? {}
+                  : {
+                      border: "none",
+                      paddingLeft: "30px",
+                      pointerEvents: "auto",
+                    }
               }
-            }}
-            style={service.logo ? {} : { border: 'none', paddingLeft: '30px', pointerEvents: 'auto' }}
-          >
-          
+            >
               {service.logo && (
                 <div className="imageContainer">
                   <img src={service.logo} alt={service.name} className="logo" />
@@ -119,10 +130,14 @@ const Services = (props) => {
                   onClick={() => {
                     openContact();
                   }}
-                  style={{marginTop: '36px'}}
+                  style={{ marginTop: "36px" }}
                 >
                   Lets Connect{" "}
-                  <img src={arrow} alt="arrrow" className="arrowapp" />{" "}
+                  <img
+                    src={isHovered ? whiteArrow : arrow}
+                    alt="arrow"
+                    className="arrowapp"
+                  />{" "}
                 </div>
               )}
             </div>

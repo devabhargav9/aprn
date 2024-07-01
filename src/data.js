@@ -10,11 +10,10 @@ import clientMace from "../src/assets/client-mace.svg";
 import clientMundi from "../src/assets/client-mundi.svg";
 import clientCbre from "../src/assets/client-cbre.svg";
 import clientAstra from "../src/assets/client-astra.svg";
-import clientBalance from '../src/assets/clientBalance.svg'
-import clientKc from '../src/assets/clientKc.svg'
-import clientMalay from '../src/assets/clientMalay.svg'
-import clientMay from '../src/assets/clientMay.svg'
-
+import clientBalance from "../src/assets/clientBalance.svg";
+import clientKc from "../src/assets/clientKc.svg";
+import clientMalay from "../src/assets/clientMalay.svg";
+import clientMay from "../src/assets/clientMay.svg";
 
 import clientMs from "../src/assets/client-ms.svg";
 import clientRics from "../src/assets/client-rics.svg";
@@ -86,7 +85,6 @@ import scroll3 from "../src/assets/scroll3.png";
 import scroll4 from "../src/assets/scroll4.png";
 import scroll5 from "../src/assets/scroll5.png";
 
-
 import cscroll1 from "../src/assets/cscroll1.png";
 import cscroll2 from "../src/assets/cscroll2.png";
 import cscroll3 from "../src/assets/cscroll3.png";
@@ -94,7 +92,6 @@ import cscroll4 from "../src/assets/cscroll4.png";
 
 import dscroll1 from "../src/assets/dscroll1.png";
 import escroll1 from "../src/assets/escroll1.png";
-
 
 import ai1 from "../src/assets/ai1.svg";
 import ai2 from "../src/assets/ai2.svg";
@@ -128,7 +125,6 @@ import teams3 from "../src/assets/teams3.svg";
 import teams4 from "../src/assets/teams4.svg";
 import teams5 from "../src/assets/teams5.svg";
 
-
 export const clients = [
   clientMace,
   clientMundi,
@@ -151,8 +147,8 @@ export const clients = [
 export const facts = [
   {
     name: "Performance & Productivity Improvement",
-    value: 35,
-    displayText: "35%+",
+    value: 40,
+    displayText: "40%+",
     icon: factsLogo4,
   },
   {
@@ -264,7 +260,7 @@ export const navBarItems = [
   {
     name: "Careers",
     redirect_url: "/careers",
-  }
+  },
 ];
 
 export const services = [
@@ -493,8 +489,8 @@ export const devopsServiceData = [
   },
   {
     name: "Contact US",
-    desc: "Curious what’s the optimal development process for your product and challenges?"
-  }
+    desc: "Curious what’s the optimal development process for your product and challenges?",
+  },
 ];
 
 export const AppDevServiceData = [
@@ -527,8 +523,8 @@ export const AppDevServiceData = [
   },
   {
     name: "Contact US",
-    desc: "Curious what’s the optimal development process for your product and challenges?"
-  }
+    desc: "Curious what’s the optimal development process for your product and challenges?",
+  },
 ];
 
 export const aiServiceData = [
@@ -577,8 +573,8 @@ export const aiServiceData = [
   },
   {
     name: "Contact US",
-    desc: "Curious what’s the optimal development process for your product and challenges?"
-  }
+    desc: "Curious what’s the optimal development process for your product and challenges?",
+  },
 ];
 
 export const digitalServiceData = [
@@ -620,7 +616,7 @@ export const iotServiceData = [
     desc: "To make IoT data available easily across the enterprise, we connect the IoT solutions with your ERP, CRM, EHR and more",
     logo: iot3,
   },
- 
+
   {
     name: "Disciplined Infrastructure",
     desc: "AI enables easy interpretation of complex tasks, ML focuses on improvement and customization. Our AI and ML developers to have a blend both technologies.",
@@ -633,8 +629,8 @@ export const iotServiceData = [
   },
   {
     name: "Contact US",
-    desc: "Curious what’s the optimal development process for your product and challenges?"
-  }
+    desc: "Curious what’s the optimal development process for your product and challenges?",
+  },
 ];
 
 export const ecomServiceData = [
@@ -653,7 +649,7 @@ export const ecomServiceData = [
     desc: "Double down on brand relevance with personalized and engaging commerce experiences fueled by actionable insights.",
     logo: com3,
   },
- 
+
   {
     name: "Business model expansion",
     desc: "Activate revenue and increase reach with subscriptions, DTC, marketplaces, IoT commerce, social commerce and more",
@@ -666,8 +662,8 @@ export const ecomServiceData = [
   },
   {
     name: "Contact US",
-    desc: "Curious what’s the optimal development process for your product and challenges?"
-  }
+    desc: "Curious what’s the optimal development process for your product and challenges?",
+  },
 ];
 
 export const teamsServiceData = [
@@ -686,7 +682,7 @@ export const teamsServiceData = [
     desc: "Seasoned recruitment and shorter recruitment cycles allow us to augment our dedicated teams within much shorter timeframes.",
     logo: teams3,
   },
- 
+
   {
     name: "Faster Time-to-Market",
     desc: "Our ability to create a dedicated team within a shorter timeframe and augment it promptly afterwards helps reduce your solution’s time-to-market.",
@@ -699,10 +695,9 @@ export const teamsServiceData = [
   },
   {
     name: "Contact US",
-    desc: "Curious what’s the optimal development process for your product and challenges?"
-  }
+    desc: "Curious what’s the optimal development process for your product and challenges?",
+  },
 ];
-
 
 export const navBarCapabilities = [
   {
@@ -771,7 +766,6 @@ export const aboutUsServicesData = [
     desc: "Fast-growth, and emphasis on professional development mean very low attrition rates.",
     logo: abtUs4,
   },
- 
 
   {
     name: "Value Creation",
@@ -784,5 +778,3 @@ export const appScrollData = [scroll1, scroll2, scroll3, scroll4, scroll5];
 export const cloudScrollData = [cscroll1, cscroll2, cscroll3, cscroll4];
 export const devopsScrollData = [dscroll1];
 export const ecomScrollData = [escroll1];
-
-

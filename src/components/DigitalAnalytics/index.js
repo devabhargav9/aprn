@@ -23,35 +23,73 @@ const DigitalAnalytics = () => {
     }
   };
   const openContact = () => {
-    window.location.href='/contactUs';
-  }
+    window.location.href = "/contactUs";
+  };
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer" style={{ backgroundImage: `url(${digitalAnalytics})`}}>
-            <div className="headTextSection">
-                <div className="buildText">Data Research Dashboards</div>
-                <div className="textOneapp">
-                Leveraging <span className="textTwoapp">Data</span> to take <br /><span className="textTwoapp">Future</span> Decisions
-                    
-                </div>
-                <div className="subTextapp">
-                Creating impactful solutions with deep analysis to make predictive decisions and <br/>measurable outcomes
-                </div>
-                <div className="buttonsContainerapp">
-                    <div className="getTouchapp" onClick={() => {openContact()}}>
-                        Get in Touch now{" "}
-                        <img src={arrow} alt="arrow" className="arrowapp" />
-                    </div>
-                    <div className="anyQueryapp" onClick={() => {openContact()}}>Any Query?</div>
-                </div>
+      <div
+        className="AppDevContainer"
+        style={{ backgroundImage: `url(${digitalAnalytics})` }}
+      >
+        <div className="headTextSection">
+          <div className="buildText">Data Research Dashboards</div>
+          <div className="textOneapp">
+            Leveraging <span className="textTwoapp">Data</span> to take <br />
+            <span className="textTwoapp">Future</span> Decisions
+          </div>
+          <div className="subTextapp">
+            Creating impactful solutions with deep analysis to make predictive
+            decisions and <br />
+            measurable outcomes
+          </div>
+          <div className="buttonsContainerapp">
+            <div
+              className="getTouchapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Get in Touch now{" "}
+              <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
+            <div
+              className="anyQueryapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Any Query?
+            </div>
+          </div>
         </div>
+      </div>
       <ClientsScrollBar />
-      <BusinessPotential diffText={"Digital Analytics"} subText1={'We utilize the potential of numerous data sets to unearth past and untapped insights that can leverage businesses from different regions/industries and help make better decisions to obtain competitive advantages.'}subText2={'We help you to analyze the business needs through intuitive dashboards and transform data into powerful insights that can offer your business the required mileage in the competitive market'}/>
-      <Services services={digitalServiceData} clickable={true} heightFactor={320} topText={'Our latest services'} bigText1={'Our Services'} bigText2={'your organization ahead'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
+      <BusinessPotential
+        diffText={"Digital Analytics"}
+        subText1={
+          "We utilize the potential of numerous data sets to unearth past and untapped insights that can leverage businesses from different regions/industries and help make better decisions to obtain competitive advantages."
+        }
+        subText2={
+          "We help you to analyze the business needs through intuitive dashboards and transform data into powerful insights that can offer your business the required mileage in the competitive market"
+        }
+      />
+      <Services
+        services={digitalServiceData}
+        clickable={true}
+        heightFactor={320}
+        topText={"Our latest services"}
+        bigText1={"Our Services"}
+        bigText2={"your organization ahead"}
+        smallText1={
+          "We are pioneers of the digital approach, using leading-edge technology to"
+        }
+        smallText2={
+          "simplify procedures and apply executive for your business."
+        }
+      />
 
-     <AboutCompany
+      <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
         subText1={"We promise high quality"}
@@ -74,7 +112,7 @@ const DigitalAnalytics = () => {
       />
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </div>
   );
 };

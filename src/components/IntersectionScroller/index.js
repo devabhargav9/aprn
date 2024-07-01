@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import './scroller.scss'; // Adjust the path as per your file structure
+import React, { useEffect, useRef } from "react";
+import "./scroller.scss"; // Adjust the path as per your file structure
 import arrow from "../../assets/arrow.svg";
 
 const ScrollableComponent = ({ data, setScrolling }) => {
@@ -10,24 +10,26 @@ const ScrollableComponent = ({ data, setScrolling }) => {
 
     const handleScroll = () => {
       if (container) {
-        const isScrollable = container.scrollHeight - container.clientHeight <= container.scrollTop;
+        const isScrollable =
+          container.scrollHeight - container.clientHeight <=
+          container.scrollTop;
         if (isScrollable) {
-          container.style.overflowY = 'hidden'; // Disable further scrolling
+          container.style.overflowY = "hidden"; // Disable further scrolling
           setScrolling(false);
         } else {
-          container.style.overflowY = 'auto'; // Enable scrolling
+          container.style.overflowY = "auto"; // Enable scrolling
           setScrolling(true);
         }
       }
     };
 
     if (container) {
-      container.addEventListener('scroll', handleScroll);
+      container.addEventListener("scroll", handleScroll);
     }
 
     return () => {
       if (container) {
-        container.removeEventListener('scroll', handleScroll);
+        container.removeEventListener("scroll", handleScroll);
       }
     };
   }, [setScrolling]);
@@ -45,7 +47,8 @@ const ScrollableComponent = ({ data, setScrolling }) => {
           </figure>
         ))}
         <figure>
-          <div className="end-of-scroll"></div> {/* Transparent div at the end */}
+          <div className="end-of-scroll"></div>{" "}
+          {/* Transparent div at the end */}
         </figure>
       </>
     );
@@ -53,15 +56,18 @@ const ScrollableComponent = ({ data, setScrolling }) => {
 
   return (
     <div>
-      <div className='caseHead'>Case Studies</div>
-      <div className='caseSub'>See How we Built <br />Top Quality Products</div>
+      <div className="caseHead">Case Studies</div>
+      <div className="caseSub">
+        See How we Built <br />
+        Top Quality Products
+      </div>
       <div className="scrollableContainer" ref={containerRef}>
         <article>{renderImages()}</article>
       </div>
       <div
         className="getTouchScroll"
         onClick={openCaseStudies}
-        style={{ marginTop: '36px' }}
+        style={{ marginTop: "36px" }}
       >
         View All Case Studies
         <img src={arrow} alt="arrow" className="arrowapp" />

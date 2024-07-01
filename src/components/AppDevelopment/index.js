@@ -19,7 +19,9 @@ const AppDevelopment = () => {
 
   useEffect(() => {
     if (mainContainerRef.current) {
-      mainContainerRef.current.style.overflowY = isScrolling ? 'auto' : 'hidden';
+      mainContainerRef.current.style.overflowY = isScrolling
+        ? "auto"
+        : "hidden";
     }
   }, [isScrolling]);
 
@@ -30,13 +32,16 @@ const AppDevelopment = () => {
   };
 
   const openContact = () => {
-    window.location.href = '/contactUs';
+    window.location.href = "/contactUs";
   };
 
   return (
     <div className="appDevWrapper" ref={mainContainerRef}>
       <HeadNavBar />
-      <div className="AppDevContainer" style={{ backgroundImage: `url(${addDevPage})` }}>
+      <div
+        className="AppDevContainer"
+        style={{ backgroundImage: `url(${addDevPage})` }}
+      >
         <div className="headTextSection">
           <div className="buildText">Ideate Integrate Execute</div>
           <div className="textOneapp">
@@ -44,24 +49,32 @@ const AppDevelopment = () => {
             Progressive Web Apps <br />
           </div>
           <div className="subTextapp">
-            Custom application development to drive operational efficiency, <br />enhance customer engagement, and foster mobility and growth
-            secure solutions to suit your project needs.
+            Custom application development to drive operational efficiency,{" "}
+            <br />
+            enhance customer engagement, and foster mobility and growth secure
+            solutions to suit your project needs.
           </div>
           <div className="buttonsContainerapp">
             <div className="getTouchapp" onClick={openContact}>
               Get in Touch now{" "}
               <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
-            <div className="anyQueryapp" onClick={openContact}>Any Query?</div>
+            <div className="anyQueryapp" onClick={openContact}>
+              Any Query?
+            </div>
           </div>
         </div>
       </div>
 
       <ClientsScrollBar />
-      <BusinessPotential 
-        diffText={"App Solutions"} 
-        subText1={'Building Custom applications with the power of design thinking & a responsive approach to unleash the potential of enterprises with a customer-centric approach to drive innovation & business growth.'} 
-        subText2={'Our Custom application development aims to develop, and maintain applications & systems to improve functionality and scalability, reduce costs, and enhance the overall customer experience on multiple platforms'}
+      <BusinessPotential
+        diffText={"App Solutions"}
+        subText1={
+          "Building Custom applications with the power of design thinking & a responsive approach to unleash the potential of enterprises with a customer-centric approach to drive innovation & business growth."
+        }
+        subText2={
+          "Our Custom application development aims to develop, and maintain applications & systems to improve functionality and scalability, reduce costs, and enhance the overall customer experience on multiple platforms"
+        }
       />
       <Services
         services={AppDevServiceData}
@@ -71,8 +84,12 @@ const AppDevelopment = () => {
         topText={"Our latest services"}
         bigText1={"Our services"}
         bigText2={"your organization secure"}
-        smallText1={"We are pioneers of the digital approach, using leading-edge technology to"}
-        smallText2={"simplify procedures and apply executive for your business."}
+        smallText1={
+          "We are pioneers of the digital approach, using leading-edge technology to"
+        }
+        smallText2={
+          "simplify procedures and apply executive for your business."
+        }
         showToggle={true}
       />
       <AboutCompany
@@ -87,7 +104,9 @@ const AppDevelopment = () => {
         extraText2={
           "We offer a full cycle of application design, integration and management services. Whether it is a consumer-oriented app or a transformative enterprise-class solution, we at APRN manage end-to-end mobile app development process from ideation and concept to delivery, and to ongoing support."
         }
-        extraText3={'APRN is empowered to help customers modernize their IT operations, enhancing their business operations and transformations, and build a strong digital core.'}
+        extraText3={
+          "APRN is empowered to help customers modernize their IT operations, enhancing their business operations and transformations, and build a strong digital core."
+        }
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />

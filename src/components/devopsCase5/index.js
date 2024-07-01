@@ -30,17 +30,21 @@ const DevopsCase5 = () => {
             </span>
           </div>
           <div className="cs4FirstSub">
-          An American Fortune 200 provider of <br/>multimodal transportation services and third-<br/>party logistics
+            An American Fortune 200 provider of <br />
+            multimodal transportation services and third-
+            <br />
+            party logistics
           </div>
           <div className="cs4FirstSub2">
-          An American Fortune 200 provider of multimodal transportation services <br/>and third-party logistics
+            An American Fortune 200 provider of multimodal transportation
+            services <br />
+            and third-party logistics
           </div>
           <div className="dev1Stats">
             <div className="dev1Lhs">
               <div className="dev2Percent">37%</div>
-              <div className="dev1Text" style={{textAlign: 'center'}}>
-                Performance and
-                productivity improvement
+              <div className="dev1Text" style={{ textAlign: "center" }}>
+                Performance and productivity improvement
               </div>
             </div>
             <div className="dev1Mid"></div>
@@ -60,19 +64,24 @@ const DevopsCase5 = () => {
             <img className="devops51" src={devops51} />
           </div>
           <div className="lhs">
-            <div className="kcHead1">
-              Challenges
-            </div>
+            <div className="kcHead1">Challenges</div>
             <div className="kcText2">
               <ul>
                 <li>
-                Customer had several legacy applications hosted on Windows<br/> Server 2012 Datacenter that were built using Microsoft legacy <br/>technology stack .NET framework 4.5, .NET 3.5, Net1.1, VB6.0 <br/> and classical ASP (Active Server Pages).
+                  Customer had several legacy applications hosted on Windows
+                  <br /> Server 2012 Datacenter that were built using Microsoft
+                  legacy <br />
+                  technology stack .NET framework 4.5, .NET 3.5, Net1.1, VB6.0{" "}
+                  <br /> and classical ASP (Active Server Pages).
                 </li>
                 <li>
-                There was an urgent need to modernize the legacy application <br/>and migrate to Windows Server 2019.
+                  There was an urgent need to modernize the legacy application{" "}
+                  <br />
+                  and migrate to Windows Server 2019.
                 </li>
                 <li>
-                The migration of these apps to Windows Server 2019 was <br/>required.
+                  The migration of these apps to Windows Server 2019 was <br />
+                  required.
                 </li>
               </ul>
             </div>
@@ -80,19 +89,20 @@ const DevopsCase5 = () => {
         </div>
         <div className="kcCon1">
           <div className="lhs">
-            <div className="kcHead1">
-              Benifits
-            </div>
+            <div className="kcHead1">Benifits</div>
             <div className="kcText2">
               <ul>
                 <li style={{ paddingBottom: "10px" }}>
-                Availability of security patches for the holes that hackers and <br/>malware could have exploited
+                  Availability of security patches for the holes that hackers
+                  and <br />
+                  malware could have exploited
                 </li>
                 <li style={{ paddingBottom: "10px" }}>
-                Better support for the customer’s growing digital needs
+                  Better support for the customer’s growing digital needs
                 </li>
                 <li style={{ paddingBottom: "10px" }}>
-                Removal of outdated features and bugs that caused the <br/>applications to behave unexpectedly
+                  Removal of outdated features and bugs that caused the <br />
+                  applications to behave unexpectedly
                 </li>
               </ul>
             </div>
@@ -104,26 +114,36 @@ const DevopsCase5 = () => {
 
         <img className="devops53" src={devops53} />
         <div className="dev1Last">
-          <div className="cs4Last" style={{paddingBottom:'28px'}}>
-            <span style={{ color: "rgba(0, 38, 153, 1)",  }}>Solutions</span>{" "}
+          <div className="cs4Last" style={{ paddingBottom: "28px" }}>
+            <span style={{ color: "rgba(0, 38, 153, 1)" }}>Solutions</span>{" "}
           </div>
-          <div className="numbers" style={{paddingBottom:'40px'}}>
+          <div className="numbers" style={{ paddingBottom: "40px" }}>
             <div className="numberItem">
-              1. Out of 285 applications/components, 210 were identified to be retired and 71 applications were <br/>set for either upgrade or complete rewrite to the new technology stack.
+              1. Out of 285 applications/components, 210 were identified to be
+              retired and 71 applications were <br />
+              set for either upgrade or complete rewrite to the new technology
+              stack.
             </div>
             <div className="numberItem">
-              2. Applications that were in .NET 1.x and above were upgraded to .NET 4.7.2
+              2. Applications that were in .NET 1.x and above were upgraded to
+              .NET 4.7.2
             </div>
 
-            <div className="numberItem">3.Applications thaAt were in VB6.0, VB.NET, and ASP were completely rewritten in .NET 6.0 (.NET <br/>core 6.0) and wherever possible, were upgraded to .NET core with tool-assisted migration.</div>
+            <div className="numberItem">
+              3.Applications thaAt were in VB6.0, VB.NET, and ASP were
+              completely rewritten in .NET 6.0 (.NET <br />
+              core 6.0) and wherever possible, were upgraded to .NET core with
+              tool-assisted migration.
+            </div>
 
             <div className="numberItem">
-              4. The upgraded or rewritten applications were hosted on Windows Server 2019.
+              4. The upgraded or rewritten applications were hosted on Windows
+              Server 2019.
             </div>
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

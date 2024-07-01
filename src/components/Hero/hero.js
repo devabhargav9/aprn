@@ -1,6 +1,6 @@
-import React from 'react';
-import './styles.css'; // Import your CSS styles
-import { appScrollData } from '../../data';
+import React from "react";
+import "./styles.css"; // Import your CSS styles
+import { appScrollData } from "../../data";
 
 const HeroSection = ({ appScrollData }) => (
   <>

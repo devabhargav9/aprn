@@ -13,59 +13,57 @@
   text-align: left;
 }
 
-.factsBlue{
-    color: #002699;
+.factsBlue {
+  color: #002699;
 }
 
-.facts-container{
+.facts-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 72px 40px 72px;
 }
 
-.factsHeader{
+.factsHeader {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three items in a row */
   gap: 20px; /* Gap between items */
 }
 
-.fact-icon{
-width: 36px;
-height: 31px;
+.fact-icon {
+  width: 36px;
+  height: 31px;
 }
 
-.numbersContainer{
+.numbersContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 24px;
 }
 
-.fact-name{
-font-size: 20px;
-font-weight: 600;
-line-height: 24.3px;
-text-align: center;
-color: #002699;
+.fact-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.3px;
+  text-align: center;
+  color: #002699;
 }
 
-.fact-value{
-font-size: 52px;
-font-weight: 700;
-line-height: 63px;
-text-align: left;
+.fact-value {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 63px;
+  text-align: left;
 }
 
-.factsRhs{
+.factsRhs {
   max-width: 650px;
 }
-.factStats{
-font-size: 16px;
-font-weight: 600;
-line-height: 19.44px;
-text-align: right;
-color: rgba(105, 105, 105, 1);
-
+.factStats {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.44px;
+  text-align: right;
+  color: rgba(105, 105, 105, 1);
 }
-

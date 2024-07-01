@@ -32,26 +32,22 @@ const DevopsCase2 = () => {
               <br />
               R-Lane
             </div>
-            <div className="dev1Stats" style={{paddingTop: '36px'}}>
+            <div className="dev1Stats" style={{ paddingTop: "36px" }}>
               <div className="dev1Lhs">
                 <div className="dev1Percent">35%</div>
-                <div className="dev1Text">
-                  Faster Implementation
-                </div>
+                <div className="dev1Text">Faster Implementation</div>
               </div>
               <div className="dev1Mid"></div>
               <div className="dev1Rhs">
                 <div className="dev1Percent">38%</div>
                 <div className="dev1Text">
-                Reduction in Infrastructure Costs
+                  Reduction in Infrastructure Costs
                 </div>
               </div>
               <div className="dev1Mid"></div>
               <div className="dev1Rhs">
                 <div className="dev1Percent">2x</div>
-                <div className="dev1Text">
-                Reduced Complexity
-                </div>
+                <div className="dev1Text">Reduced Complexity</div>
               </div>
             </div>
           </div>
@@ -105,27 +101,67 @@ const DevopsCase2 = () => {
 
         <img className="cloudcs4" src={cloudcs4} />
         <div className="dev1Last">
-          <div className="kcHeaddev1" style={{paddingBottom: '30px', paddingTop: '40px'}}>
-          APRN<span className="devHighCol"> Solution </span>Highlights
+          <div
+            className="kcHeaddev1"
+            style={{ paddingBottom: "30px", paddingTop: "40px" }}
+          >
+            APRN<span className="devHighCol"> Solution </span>Highlights
           </div>
           <div className="kcTextFinal">
-          <div className="kcText2" style={{paddingRight: '36px'}}>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> APRN evaluated Azure as a preferred choice for Public cloud.</div>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> LRS, ZRS enabled for storage replication in UK-S to UK-N <br/>and US-E to US-W workloads.</div>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> Refactor applications architected on 12 factor based <br/>microservices.</div>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> Azure ExpressRoute connected for primary connectivity from <br/>on-prem DC and S2S VPN connectivity as an alternate <br/>connectivity.</div>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> SQL Always availability on feature will be replicating the data <br/>apart from LRS and ZRS.</div>
-          </div>
-          <div className="kcText2">
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> Azure US East and US West are target DC for US workloads <br/> and Azure UK south and North for European workloads.</div>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/>VNET peering enabled between Azure UK both DCs <br/>and Azure US DCs.</div>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> Azure PaaS services used to optimize, consolidate app, web<br/> and DBs.</div>
-            <div className="lastItem"><img src={greenTick} className="green-tick" alt="Green Tick"/> Shared Core Services in management VLAN.</div>
-          </div>
+            <div className="kcText2" style={{ paddingRight: "36px" }}>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                APRN evaluated Azure as a preferred choice for Public cloud.
+              </div>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                LRS, ZRS enabled for storage replication in UK-S to UK-N <br />
+                and US-E to US-W workloads.
+              </div>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                Refactor applications architected on 12 factor based <br />
+                microservices.
+              </div>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                Azure ExpressRoute connected for primary connectivity from{" "}
+                <br />
+                on-prem DC and S2S VPN connectivity as an alternate <br />
+                connectivity.
+              </div>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                SQL Always availability on feature will be replicating the data{" "}
+                <br />
+                apart from LRS and ZRS.
+              </div>
+            </div>
+            <div className="kcText2">
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                Azure US East and US West are target DC for US workloads <br />{" "}
+                and Azure UK south and North for European workloads.
+              </div>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />
+                VNET peering enabled between Azure UK both DCs <br />
+                and Azure US DCs.
+              </div>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                Azure PaaS services used to optimize, consolidate app, web
+                <br /> and DBs.
+              </div>
+              <div className="lastItem">
+                <img src={greenTick} className="green-tick" alt="Green Tick" />{" "}
+                Shared Core Services in management VLAN.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

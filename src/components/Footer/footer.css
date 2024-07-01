@@ -6,14 +6,13 @@
   background-size: cover;
   background-position: center; */
 
-
-  background-image: url('../../assets/astronaut.png');
+  background-image: url("../../assets/astronaut.png");
   background-size: cover;
   background-position: center;
   height: 462px;
   display: flex;
   align-items: center;
-  position: relative; 
+  position: relative;
 }
 
 .astronautIcon {
@@ -52,7 +51,7 @@
   line-height: 32px;
   text-align: left;
 }
-.weStriveTop{
+.weStriveTop {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -173,11 +172,10 @@ input[type="email"]:focus {
   border-radius: 96px;
   margin-left: 8px;
 }
-.weStrive{
-font-size: 14px;
-font-weight: 400;
-line-height: 17.01px;
-text-align: left;
-color: rgba(255, 255, 255, 0.75);
-
+.weStrive {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.01px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.75);
 }

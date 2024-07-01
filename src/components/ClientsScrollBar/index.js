@@ -9,7 +9,7 @@ const ClientScrollBar = (props) => {
   useEffect(() => {
     const carouselContent = carouselContentRef.current;
     const clone = carouselContent.cloneNode(true);
-    clone.classList.add('clone');
+    clone.classList.add("clone");
     carouselContent.parentElement.appendChild(clone);
   }, []);
 
@@ -23,7 +23,9 @@ const ClientScrollBar = (props) => {
 
   return (
     <div className="carousel-container">
-      {props.showHeader && <div className="clientHeader">Some of our incredible clients</div>}
+      {props.showHeader && (
+        <div className="clientHeader">Some of our incredible clients</div>
+      )}
       <div className="carousel-track">
         <div className="carousel-content" ref={carouselContentRef}>
           {getImagesForClientScroll(clients)}

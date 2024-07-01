@@ -26,6 +26,7 @@ const WebContainer = () => {
   return (
     <div className="WebContainer">
       <HeadNavBar isBlue={true} />
+      <div className="ExtraDiv"></div>
       <MainHeader />
       <div className="detailsContainer">
         <ClientsScrollBar />
@@ -42,7 +43,7 @@ const WebContainer = () => {
             "Over a decade of extensive experience, with our lean agile models, domain expertise and seasoned professionals and we deliver success in comprehensive enterprise software development, IT services, and IT consulting tailored to your business needs while being cost and time effective."
           }
           extraText3={
-            'At APRN, we believe in creating and delivering value for with our external and internal stakeholders as we cherish the collective growth and success with our highly supportive team.'
+            "At APRN, we believe in creating and delivering value for with our external and internal stakeholders as we cherish the collective growth and success with our highly supportive team."
           }
           showCTA={true}
           isAboutUs={true}
@@ -56,8 +57,12 @@ const WebContainer = () => {
             topText={"Our latest services"}
             bigText1={"Our services"}
             bigText2={"your organization secure"}
-            smallText1={"We are pioneers of the digital approach, using leading-edge technology to"}
-            smallText2={"simplify procedures and apply executive for your business."}
+            smallText1={
+              "We are pioneers of the digital approach, using leading-edge technology to"
+            }
+            smallText2={
+              "simplify procedures and apply executive for your business."
+            }
           />
         </div>
         <AboutCompany

@@ -36,8 +36,9 @@ const Ecom = () => {
         <div className="headTextSection">
           <div className="buildText">Customers Marketing Experience</div>
           <div className="textOneapp">
-            Connecting <span style={{ color: "#002699" }}>Consumers, </span><br />
-            retailers and brands 
+            Connecting <span style={{ color: "#002699" }}>Consumers, </span>
+            <br />
+            retailers and brands
           </div>
           <div className="subTextapp">
             Helping e-commerce brands understand customer behavior by creating
@@ -109,7 +110,7 @@ const Ecom = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-            <ScrollableComponent data={ecomScrollData}/>
+      <ScrollableComponent data={ecomScrollData} />
 
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}

@@ -54,10 +54,12 @@ const Facts = () => {
     <div className="facts-container">
       <div className="factsLhs">
         <div className="factsSubHead">
-          <span className="factsBlue">Facts</span> about our<br/>company
+          <span className="factsBlue">Facts</span> about our
+          <br />
+          company
         </div>
       </div>
-      
+
       <div className="factsRhs">
         <div className="factsHeader">
           {facts.map((fact, index) => (
@@ -68,7 +70,9 @@ const Facts = () => {
             </div>
           ))}
         </div>
-        <div className="factStats">*Stats based on the growth delivered to our clients</div>
+        <div className="factStats">
+          *Stats based on the growth delivered to our clients
+        </div>
       </div>
     </div>
   );

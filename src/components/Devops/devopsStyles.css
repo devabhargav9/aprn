@@ -1,98 +1,97 @@
 .getTouchapp {
-    padding: 16px 28px 16px 28px;
-    border-radius: 62px;
-    background: #002699;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.44px;
-    color: #fff;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .anyQueryapp {
-    border: 1px solid #aeaeae;
-    padding: 18px 28px 18px 28px;
-    border-radius: 63px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.44px;
-    color: rgba(80, 80, 80, 1);
-    width: fit-content;
-    margin-left: 16px;
-    cursor: pointer;
-  }
-  
-  .buttonsContainerapp {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-top: 20px;
-  }
-  
-  .arrowapp {
-    width: 14px;
-    height: 14px;
-    padding-left: 10px;
-  }
-  
-  .addDevPage {
-    height: 600px;
-  }
-  
-  .AppDevContainer {
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 84px);
-    padding-top: 84px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #fff;
-  }
-  
-  .headTextSection {
-    padding: 20px;
-    position: absolute;
-    left: 5%;
-    transform: translateY(-1%);
-  }
-  
-  
-  .textOneapp {
-    font-size: 68px;
-    font-weight: 700;
-    line-height: 90px;
-    text-align: left;
-  }
-  .textTwoapp {
-    font-size: 76px;
-    font-weight: 700;
-    line-height: 90px;
-    text-align: left;
-    color: rgba(0, 38, 153, 1) !important;
-  }
-  .subTextapp {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    color: rgba(80, 80, 80, 1);
-    padding-top: 36px;
-  }
-  
-  .appDevWrapper {
-    text-align: center;
-  }
-  
-  .buildText {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 34.02px;
-    text-align: left;
-    color: rgba(105, 105, 105, 1);
-    padding-bottom: 10px;
-  }
+  padding: 16px 28px 16px 28px;
+  border-radius: 62px;
+  background: #002699;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.44px;
+  color: #fff;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.anyQueryapp {
+  border: 1px solid #aeaeae;
+  padding: 18px 28px 18px 28px;
+  border-radius: 63px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.44px;
+  color: rgba(80, 80, 80, 1);
+  width: fit-content;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.buttonsContainerapp {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.arrowapp {
+  width: 14px;
+  height: 14px;
+  padding-left: 10px;
+}
+
+.addDevPage {
+  height: 600px;
+}
+
+.AppDevContainer {
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 84px);
+  padding-top: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.headTextSection {
+  padding: 20px;
+  position: absolute;
+  left: 5%;
+  transform: translateY(-1%);
+}
+
+.textOneapp {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: left;
+}
+.textTwoapp {
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: left;
+  color: rgba(0, 38, 153, 1) !important;
+}
+.subTextapp {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(80, 80, 80, 1);
+  padding-top: 36px;
+}
+
+.appDevWrapper {
+  text-align: center;
+}
+
+.buildText {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.02px;
+  text-align: left;
+  color: rgba(105, 105, 105, 1);
+  padding-bottom: 10px;
+}

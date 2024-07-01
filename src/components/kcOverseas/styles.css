@@ -10,11 +10,12 @@
   height: 464px;
   top: 450px;
   left: -180px;
-  background: #64C1A426;
+  background: #64c1a426;
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(#64C1A426, transparent);
+  background: radial-gradient(#64c1a426, transparent);
   filter: blur(10px);
+  z-index: -1;
 }
 
 .lhs {

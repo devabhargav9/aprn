@@ -37,26 +37,22 @@ const DevopsCase3 = () => {
               <br />
               Azure.
             </div>
-            <div className="dev1Stats" style={{paddingTop: '36px'}}>
+            <div className="dev1Stats" style={{ paddingTop: "36px" }}>
               <div className="dev1Lhs">
                 <div className="dev1Percent">30%</div>
-                <div className="dev1Text">
-                Reduction in operational cost
-                </div>
+                <div className="dev1Text">Reduction in operational cost</div>
               </div>
               <div className="dev1Mid"></div>
               <div className="dev1Rhs">
                 <div className="dev1Percent">35%</div>
                 <div className="dev1Text">
-                Performance and productivity improvement
+                  Performance and productivity improvement
                 </div>
               </div>
               <div className="dev1Mid"></div>
               <div className="dev1Rhs">
                 <div className="dev1Percent">40%</div>
-                <div className="dev1Text">
-                Efforts Saving
-                </div>
+                <div className="dev1Text">Efforts Saving</div>
               </div>
             </div>
           </div>
@@ -157,7 +153,7 @@ const DevopsCase3 = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

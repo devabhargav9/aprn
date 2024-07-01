@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './styles.css';
+import React, { useEffect, useState } from "react";
+import "./styles.css";
 
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,7 +13,6 @@ const Carousel = ({ items }) => {
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [currentIndex]);
-
 
   const updateCarousel = (index) => {
     setCurrentIndex(index);
@@ -32,25 +31,36 @@ const Carousel = ({ items }) => {
   return (
     <div className="carousel">
       {/* <button onClick={prevSlide}>Previous</button> */}
-      <div className="carousel-inner" style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)` }}>
+      <div
+        className="carousel-inner"
+        style={{
+          transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
+        }}
+      >
         {items.map((item, index) => (
           <div className="carousel-item" key={index}>
-            <img src={item.rating} alt="stars" className='stars'/>
-            <div className='titleText'>{item.title}</div>
-            <div className='descText'>{item.desc}</div>
-            <div className='reviewer'>{item.name}</div>
+            <img src={item.rating} alt="stars" className="stars" />
+            <div className="titleText">{item.title}</div>
+            <div className="descText">{item.desc}</div>
+            <div className="reviewer">{item.name}</div>
           </div>
         ))}
       </div>
       {/* <button onClick={nextSlide}>Next</button> */}
       <div className="carousel-dots">
-        {Array.from({ length: Math.ceil(totalItems / itemsPerView) }).map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === Math.floor(currentIndex / itemsPerView) ? 'active' : ''}`}
-            onClick={() => updateCarousel(index * itemsPerView)}
-          />
-        ))}
+        {Array.from({ length: Math.ceil(totalItems / itemsPerView) }).map(
+          (_, index) => (
+            <span
+              key={index}
+              className={`dot ${
+                index === Math.floor(currentIndex / itemsPerView)
+                  ? "active"
+                  : ""
+              }`}
+              onClick={() => updateCarousel(index * itemsPerView)}
+            />
+          )
+        )}
       </div>
     </div>
   );

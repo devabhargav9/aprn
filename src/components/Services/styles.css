@@ -59,8 +59,18 @@
   border-radius: 12px;
   position: relative;
   overflow: hidden;
-  pointer-events: none;
+  /* pointer-events: none; */
   text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.noClickService:hover {
+  background-color: white;
+  color: black;
+}
+.noClickService:hover .getTouch {
+  background-color: #002699;
+  color: white; /* Optional: Change the text color to white for better contrast */
 }
 .service::before {
   content: "";
@@ -113,7 +123,6 @@
   padding: 22px;
 }
 
-/* Container for the toggle tabs */
 .toggle-tabs-container {
   width: 600px;
   margin: 0px auto;

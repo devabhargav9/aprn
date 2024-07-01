@@ -73,7 +73,7 @@ const DevTeams = () => {
           "We are your strategic People partner in building a diverse team when you need the most. Our in-house technologists help you find rare skill sets to meet your needs, delivering a dynamic, team on your timeline."
         }
       />
-       <Services
+      <Services
         services={teamsServiceData}
         clickable={true}
         heightFactor={640}

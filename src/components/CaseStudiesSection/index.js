@@ -5,16 +5,12 @@ import balanceCS from "../../assets/balanceCS.svg";
 import kcCS from "../../assets/kcCS.svg";
 import malayCs from "../../assets/malayCs.svg";
 import mayBankCS from "../../assets/mayBankcs.svg";
-import carPool from '../../assets/carPoolcs.svg';
-import devopscs1 from '../../assets/devopscs1.svg';
-import devopscs2 from '../../assets/devopscs2.svg';
-import devopscs3 from '../../assets/devopscs3.svg';
-import devopscs4 from '../../assets/devopscs4.svg';
-import devopscs5 from '../../assets/devopscs5.svg';
-
-
-
-
+import carPool from "../../assets/carPoolcs.svg";
+import devopscs1 from "../../assets/devopscs1.svg";
+import devopscs2 from "../../assets/devopscs2.svg";
+import devopscs3 from "../../assets/devopscs3.svg";
+import devopscs4 from "../../assets/devopscs4.svg";
+import devopscs5 from "../../assets/devopscs5.svg";
 
 const CaseStudiesSection = () => {
   const redirectToCaseStudy = (caseStudy) => {
@@ -50,7 +46,7 @@ const CaseStudiesSection = () => {
           className="balanceImage"
           onClick={redirectToCaseStudy("kc-overseas")}
         ></img>
-         {/* <img
+        {/* <img
           src={mayBankCS}
           alt="KC overseas Case Study"
           className="balanceImage"
@@ -77,7 +73,6 @@ const CaseStudiesSection = () => {
           className="carPoolImg"
           onClick={redirectToCaseStudy("devops-appModernization")}
         ></img>
-        
       </div>
       <div className="caseSudiesSection2">
         <img
@@ -91,7 +86,7 @@ const CaseStudiesSection = () => {
           alt="KC overseas Case Study"
           className="devopsCS3"
           onClick={redirectToCaseStudy("cloud-cs")}
-        ></img>        
+        ></img>
       </div>
       <div className="caseSudiesSection2">
         <img
@@ -99,13 +94,13 @@ const CaseStudiesSection = () => {
           alt="KC overseas Case Study"
           className="devopsCS3"
           onClick={redirectToCaseStudy("appModern2-cs")}
-        ></img>   
-         <img
+        ></img>
+        <img
           src={devopscs5}
           alt="Balance Case Study"
           className="devopsCS2"
           onClick={redirectToCaseStudy("healthCheck-cs")}
-        ></img>     
+        ></img>
       </div>
     </div>
   );

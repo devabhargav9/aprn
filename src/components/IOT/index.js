@@ -22,36 +22,73 @@ const IOT = () => {
     }
   };
   const openContact = () => {
-    window.location.href='/contactUs';
-  }
+    window.location.href = "/contactUs";
+  };
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer" style={{ backgroundImage: `url(${iotImage})`}}>
-            <div className="headTextSection">
-                <div className="buildText">
-                Innovate Accelerate Dominate
-                </div>
-                <div className="textOneapp">
-                    Discover Our <span style={{ color: "#002699" }}>IOT</span>
-                    <br />
-                    <span style={{ color: "#002699" }}>Solutions</span> for Tomorrow
-                </div>
-                <div className="subTextapp">
-                Developing IoT solutions & accelerators, that include end-to-end digital <br/>execution capabilities
-                </div>
-                <div className="buttonsContainerapp">
-                    <div className="getTouchapp" onClick={() => {openContact()}}>
-                        Get in Touch now{" "}
-                        <img src={arrow} alt="arrow" className="arrowapp" />
-                    </div>
-                    <div className="anyQueryapp" onClick={() => {openContact()}}>Any Query?</div>
-                </div>
+      <div
+        className="AppDevContainer"
+        style={{ backgroundImage: `url(${iotImage})` }}
+      >
+        <div className="headTextSection">
+          <div className="buildText">Innovate Accelerate Dominate</div>
+          <div className="textOneapp">
+            Discover Our <span style={{ color: "#002699" }}>IOT</span>
+            <br />
+            <span style={{ color: "#002699" }}>Solutions</span> for Tomorrow
+          </div>
+          <div className="subTextapp">
+            Developing IoT solutions & accelerators, that include end-to-end
+            digital <br />
+            execution capabilities
+          </div>
+          <div className="buttonsContainerapp">
+            <div
+              className="getTouchapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Get in Touch now{" "}
+              <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
+            <div
+              className="anyQueryapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Any Query?
+            </div>
+          </div>
         </div>
+      </div>
       <ClientsScrollBar />
-      <BusinessPotential diffText={"IOT Solutions"} subText1={'Accelerating businesses through innovative IoT software development services that promote seamless integration and countless possibilities. IoT solutions for residences & businesses to connect devices, gather data and analyze to gain insights and improve decision-making.'} subText2={'As an innovative IoT app development hub, we bring the most cutting-edge technologies and techniques on board to provide you with mobile IoT software solutions that suit your business needs'}/>
-      <Services services={iotServiceData} clickable={true} heightFactor={640} topText={'Our latest services'} bigText1={'Our Services'} bigText2={'your organization ahead'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'} gridItems={3}/>
+      <BusinessPotential
+        diffText={"IOT Solutions"}
+        subText1={
+          "Accelerating businesses through innovative IoT software development services that promote seamless integration and countless possibilities. IoT solutions for residences & businesses to connect devices, gather data and analyze to gain insights and improve decision-making."
+        }
+        subText2={
+          "As an innovative IoT app development hub, we bring the most cutting-edge technologies and techniques on board to provide you with mobile IoT software solutions that suit your business needs"
+        }
+      />
+      <Services
+        services={iotServiceData}
+        clickable={true}
+        heightFactor={640}
+        topText={"Our latest services"}
+        bigText1={"Our Services"}
+        bigText2={"your organization ahead"}
+        smallText1={
+          "We are pioneers of the digital approach, using leading-edge technology to"
+        }
+        smallText2={
+          "simplify procedures and apply executive for your business."
+        }
+        gridItems={3}
+      />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -72,7 +109,7 @@ const IOT = () => {
       />
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </div>
   );
 };

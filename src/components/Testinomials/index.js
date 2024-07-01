@@ -6,16 +6,16 @@ import { testinomials } from "../../data";
 import Carousel from "../Carousel";
 
 const Testinomials = (props) => {
-
   return (
     <div className="testinomialContainer">
-        <div className="header">
-            <div className="testinomialsText">Testimonials</div>
-            <div className="testSubText">See what people are <br/>saying <span className="testSubTextAbt">about us</span></div>
+      <div className="header">
+        <div className="testinomialsText">Testimonials</div>
+        <div className="testSubText">
+          See what people are <br />
+          saying <span className="testSubTextAbt">about us</span>
         </div>
-        <div className="testContainer">
-            {<Carousel items={testinomials} />}
-        </div>
+      </div>
+      <div className="testContainer">{<Carousel items={testinomials} />}</div>
     </div>
   );
 };

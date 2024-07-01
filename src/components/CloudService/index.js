@@ -25,35 +25,72 @@ const CloudService = () => {
     }
   };
   const openContact = () => {
-    window.location.href='/contactUs';
-  }
+    window.location.href = "/contactUs";
+  };
   return (
     <div className="appDevWrapper">
       <HeadNavBar />
-      <div className="AppDevContainer" style={{ backgroundImage: `url(${cloudImage})` }}>
-            <div className="headTextSection">
-                <div className="buildText">Build, Test and Deploy</div>
-                <div className="textOneapp">
-                    Drive Growth and <br />
-                    Efficiency with Our <br />
-                    <span className="textTwoapp">Cloud Solutions</span>
-                </div>
-                <div className="subTextapp">
-                Creating an optimal cloud strategy, streamline IT architecture, and<br />
-                achieve desired business results
-                </div>
-                <div className="buttonsContainerapp">
-                    <div className="getTouchapp" onClick={() => {openContact()}}>
-                        Get in Touch now{" "}
-                        <img src={arrow} alt="arrow" className="arrowapp" />
-                    </div>
-                    <div className="anyQueryapp" onClick={() => {openContact()}}>Any Query?</div>
-                </div>
+      <div
+        className="AppDevContainer"
+        style={{ backgroundImage: `url(${cloudImage})` }}
+      >
+        <div className="headTextSection">
+          <div className="buildText">Build, Test and Deploy</div>
+          <div className="textOneapp">
+            Drive Growth and <br />
+            Efficiency with Our <br />
+            <span className="textTwoapp">Cloud Solutions</span>
+          </div>
+          <div className="subTextapp">
+            Creating an optimal cloud strategy, streamline IT architecture, and
+            <br />
+            achieve desired business results
+          </div>
+          <div className="buttonsContainerapp">
+            <div
+              className="getTouchapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Get in Touch now{" "}
+              <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
+            <div
+              className="anyQueryapp"
+              onClick={() => {
+                openContact();
+              }}
+            >
+              Any Query?
+            </div>
+          </div>
         </div>
+      </div>
       <ClientsScrollBar />
-      <BusinessPotential diffText={"Cloud Solutions"} subText1={'Take advantage of our cloud computing solutions to streamline your processes, enhance scalability and flexibility, and reduce IT costs. We work with leading cloud providers such as Microsoft Azure, AWS, and GCP.'} subText2={'We help Companies become digitally transformed by leveraging a cloud-first approach to increase efficiency, unleash new capabilities, and quickly create, richer, and scalable applications'}/>
-      <Services services={cloudServiceData} clickable={true} heightFactor={975} topText={'Our latest services'} bigText1={'Our Services'} bigText2={'your organization ahead'} smallText1={'We are pioneers of the digital approach, using leading-edge technology to'} smallText2={'simplify procedures and apply executive for your business.'}/>
+      <BusinessPotential
+        diffText={"Cloud Solutions"}
+        subText1={
+          "Take advantage of our cloud computing solutions to streamline your processes, enhance scalability and flexibility, and reduce IT costs. We work with leading cloud providers such as Microsoft Azure, AWS, and GCP."
+        }
+        subText2={
+          "We help Companies become digitally transformed by leveraging a cloud-first approach to increase efficiency, unleash new capabilities, and quickly create, richer, and scalable applications"
+        }
+      />
+      <Services
+        services={cloudServiceData}
+        clickable={true}
+        heightFactor={975}
+        topText={"Our latest services"}
+        bigText1={"Our Services"}
+        bigText2={"your organization ahead"}
+        smallText1={
+          "We are pioneers of the digital approach, using leading-edge technology to"
+        }
+        smallText2={
+          "simplify procedures and apply executive for your business."
+        }
+      />
       <AboutCompany
         placeHolderImg={chooseUsIcon}
         headText={"Why choose us"}
@@ -72,11 +109,11 @@ const CloudService = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <ScrollableComponent data={cloudScrollData}/>
+      <ScrollableComponent data={cloudScrollData} />
 
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </div>
   );
 };

@@ -45,14 +45,14 @@ const DevopsCase1 = () => {
               <div className="dev1Rhs">
                 <div className="dev1Percent">3x</div>
                 <div className="dev1Text">
-                Time saved on manual operational requests
+                  Time saved on manual operational requests
                 </div>
               </div>
               <div className="dev1Mid"></div>
               <div className="dev1Rhs">
                 <div className="dev1Percent">30%</div>
                 <div className="dev1Text">
-                Performance and productivity improvement
+                  Performance and productivity improvement
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@ const DevopsCase1 = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

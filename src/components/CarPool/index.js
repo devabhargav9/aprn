@@ -135,7 +135,7 @@ const CarPool = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

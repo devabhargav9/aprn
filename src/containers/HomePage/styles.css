@@ -1,7 +1,12 @@
-.WebContainer{
-  font-family: 'Cabin', sans-serif;    margin: 0px;
-  }
+.WebContainer {
+  font-family: "Cabin", sans-serif;
+  margin: 0px;
+}
 
-.detailsContainer{
+.detailsContainer {
   margin-top: 40px;
+}
+
+.ExtraDiv {
+  height: 80px;
 }

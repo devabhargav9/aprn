@@ -6,8 +6,7 @@ import malay2 from "../../assets/malay2.png";
 import malay3 from "../../assets/malay3.png";
 import malay4 from "../../assets/malay4.png";
 import malay5 from "../../assets/malay5.png";
-import growthBlue from '../../assets/growthBlue.svg';
-
+import growthBlue from "../../assets/growthBlue.svg";
 
 import HeadNavBar from "../HeadNavBar";
 import Footer from "../Footer";
@@ -37,30 +36,39 @@ const MalayAirlines = () => {
               The design case study is to transform the homepage of Malaysia{" "}
               <br />
               Airlines that with combination of functionality and ease of use
-              for
-              diverse generations
+              for diverse generations
             </div>
             <div className="dev1Stats">
               <div className="dev1Lhs">
-                <div className="dev1Percent" style={{color: 'rgba(93, 130, 177, 1)'}}>3x</div>
+                <div
+                  className="dev1Percent"
+                  style={{ color: "rgba(93, 130, 177, 1)" }}
+                >
+                  3x
+                </div>
                 <div className="dev1Text">
-                More amount of time <br/>spent exploring the app
+                  More amount of time <br />
+                  spent exploring the app
                 </div>
               </div>
               <div className="dev1Mid"></div>
               <div className="dev1Rhs">
-                <div className="dev1Percent" style={{color: 'rgba(93, 130, 177, 1)'}}>45%</div>
+                <div
+                  className="dev1Percent"
+                  style={{ color: "rgba(93, 130, 177, 1)" }}
+                >
+                  45%
+                </div>
                 <div className="dev1Text">
-                Time deduction in <br/>payment processing
+                  Time deduction in <br />
+                  payment processing
                 </div>
               </div>
             </div>
-              <div style={{paddingTop: '16px'}}>
-                <img src={growthBlue} alt='growth'/>
-                <div className="dev1Text">
-                Enhance data analytics
-                </div>
-              </div>
+            <div style={{ paddingTop: "16px" }}>
+              <img src={growthBlue} alt="growth" />
+              <div className="dev1Text">Enhance data analytics</div>
+            </div>
           </div>
           <div>
             <img className="malay1" src={malay1} />
@@ -142,7 +150,6 @@ const MalayAirlines = () => {
           </div>
         </div>
         <div className="kcCon1">
-          
           <div className="lhs">
             <div className="kcHead1">
               The <span className="appHighMalay">Outcome</span>
@@ -167,7 +174,7 @@ const MalayAirlines = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

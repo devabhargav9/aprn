@@ -8,6 +8,7 @@
   background: radial-gradient(#9747ff1a, transparent);
   filter: blur(10px);
   background: #9747ff1a;
+  z-index: -1;
 }
 
 .semiCircleRight {

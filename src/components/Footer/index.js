@@ -8,7 +8,6 @@ import aprnLogo from "../../assets/aprnLogo.svg";
 import { footerLinks } from "../../data";
 
 const Footer = (props) => {
-
   const renderLinks = () => {
     return Object.entries(footerLinks).map(([heading, elements]) => (
       <div key={heading} className="eachLinkSection">
@@ -34,27 +33,30 @@ const Footer = (props) => {
       </div>
     ));
   };
-  
-  
-
 
   return (
     <div className="footerSection">
-      {props.showAstronaut && <div className="footerContainer">
-        {/* <img
+      {props.showAstronaut && (
+        <div className="footerContainer">
+          {/* <img
           src={astronautIcon}
           alt="astronautIcon"
           className="astronautIcon"
         /> */}
-        <div className="contactUs">
-          <div className="readyText">Ready to get</div>
-          <div className="readyTextStart">started?</div>
-          <div className="readyDesc">At APRN, our domain expertise helps in creating and delivering value.</div>
-          <div className="weStriveTop">
-          You can also reach us by email - contact@aprn.co.uk
-          </div>
-          <div className="weStrive">We strive to respond to all emails within 24 hours.</div>
-          {/* <div className="emailContainer">
+          <div className="contactUs">
+            <div className="readyText">Ready to get</div>
+            <div className="readyTextStart">started?</div>
+            <div className="readyDesc">
+              At APRN, our domain expertise helps in creating and delivering
+              value.
+            </div>
+            <div className="weStriveTop">
+              You can also reach us by email - contact@aprn.co.uk
+            </div>
+            <div className="weStrive">
+              We strive to respond to all emails within 24 hours.
+            </div>
+            {/* <div className="emailContainer">
             <input
               type="email"
               name="email"
@@ -62,25 +64,24 @@ const Footer = (props) => {
             />
             <div className="sendButton">Send</div>
           </div> */}
+          </div>
         </div>
-      </div>
-}
+      )}
       <div className="quickLinksSection">
-      <img
+        <img
           src={aprnLogo}
           alt="APRN Logo"
           className="aprnLogo"
-          onClick={() => {window.location.href = '/'}}
+          onClick={() => {
+            window.location.href = "/";
+          }}
         />
-        <div className="linksSection">
-        {renderLinks()}
-        </div>
+        <div className="linksSection">{renderLinks()}</div>
       </div>
       <div className="copyRightSection">
         <div className="crLHS">
-        <div>©2024 APRN. All rights reserved.</div>
+          <div>©2024 APRN. All rights reserved.</div>
         </div>
-       
       </div>
     </div>
   );

@@ -8,9 +8,9 @@ import balance4 from "../../assets/balance4.png";
 import balance5 from "../../assets/balance5.png";
 import growthImg from "../../assets/growthImage.svg";
 import greenTick from "../../assets/greenTick.svg";
-import topRated from '../../assets/topRated.svg';
-import growthBlue from '../../assets/growthBlue.svg';
-import growthYellow from '../../assets/growYellow.svg';
+import topRated from "../../assets/topRated.svg";
+import growthBlue from "../../assets/growthBlue.svg";
+import growthYellow from "../../assets/growYellow.svg";
 import HeadNavBar from "../HeadNavBar";
 import Footer from "../Footer";
 import TopRated from "../TopRated";
@@ -41,8 +41,16 @@ const BalanceApp = () => {
               questions about your meditation experience, goals, and <br />
               preferences.
             </div>
-            <TopRated stat1={'Top Rated'} text1={'App on Appstore & Playstore'} icon1={topRated} stat2={'2x'} text2={'2x noticeable growth'} icon2={growthBlue} text3={'Enhance data analytics'} icon3={growthYellow}/>
-
+            <TopRated
+              stat1={"Top Rated"}
+              text1={"App on Appstore & Playstore"}
+              icon1={topRated}
+              stat2={"2x"}
+              text2={"2x noticeable growth"}
+              icon2={growthBlue}
+              text3={"Enhance data analytics"}
+              icon3={growthYellow}
+            />
           </div>
           <div>
             <img className="balanceimg1" src={balance1} />
@@ -234,7 +242,7 @@ const BalanceApp = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

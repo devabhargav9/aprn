@@ -14,7 +14,8 @@
   color: #002699;
 }
 
-.abtcontent2, .subText2 {
+.abtcontent2,
+.subText2 {
   font-size: 52px;
   font-weight: 700;
   line-height: 63px;
@@ -55,13 +56,12 @@
   padding-left: 50px;
 }
 
-.topContentDiff{
+.topContentDiff {
   padding-left: 42px;
 }
 
-.topContentDiffAbtUs{
+.topContentDiffAbtUs {
   padding-left: 0px;
-
 }
 
 .learnMore {
@@ -91,6 +91,6 @@
   padding-bottom: 24px;
 }
 
-.aboutCompanyImage{
+.aboutCompanyImage {
   width: 1252px;
 }

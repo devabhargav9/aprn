@@ -26,12 +26,12 @@
 }
 
 .clientsSubtext {
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-text-align: center;
-color: #696969;
-padding: 24px 0px 16px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #696969;
+  padding: 24px 0px 16px 0px;
 }
 
 .clientsGrid {
@@ -65,5 +65,3 @@ padding: 24px 0px 16px 0px;
   width: 147px;
   height: 82px;
 }
-
-

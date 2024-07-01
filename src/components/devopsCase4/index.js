@@ -41,9 +41,8 @@ const DevopsCase4 = () => {
           <div className="dev1Stats">
             <div className="dev1Lhs">
               <div className="dev2Percent">40%</div>
-              <div className="dev1Text" style={{textAlign: 'center'}}>
-                Performance and
-                productivity improvement
+              <div className="dev1Text" style={{ textAlign: "center" }}>
+                Performance and productivity improvement
               </div>
             </div>
             <div className="dev1Mid"></div>
@@ -202,7 +201,7 @@ const DevopsCase4 = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={true} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </>
   );
 };

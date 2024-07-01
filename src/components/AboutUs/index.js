@@ -60,7 +60,9 @@ const AboutUs = () => {
         extraText2={
           "Over a decade of extensive experience, with our lean agile models, domain expertise and seasoned professionals and we deliver success in comprehensive enterprise software development, IT services, and IT consulting tailored to your business needs while being cost and time effective."
         }
-        extraText3={'At APRN, we believe in creating and delivering value for with our external and internal stakeholders as we cherish the collective growth and success with our highly supportive team.'}
+        extraText3={
+          "At APRN, we believe in creating and delivering value for with our external and internal stakeholders as we cherish the collective growth and success with our highly supportive team."
+        }
         showCTA={false}
         isAboutUs={true}
       />
@@ -75,7 +77,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer showAstronaut={false} scrollToServices={scrollToServices}/>
+      <Footer showAstronaut={false} scrollToServices={scrollToServices} />
     </div>
   );
 };
