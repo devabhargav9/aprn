@@ -39,14 +39,14 @@ const MainHeader = () => {
           >
             Get in Touch now <img src={arrow} alt="arrow" className="arrow" />
           </div>
-          <div
+          {/* <div
             className="anyQuery"
             onClick={() => {
               openContact();
             }}
           >
             Any Query?
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

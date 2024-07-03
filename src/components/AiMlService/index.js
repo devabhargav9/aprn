@@ -50,14 +50,14 @@ const AIML = () => {
               Get in Touch now{" "}
               <img src={arrow} alt="arrrow" className="arrowapp" />{" "}
             </div>
-            <div
+            {/* <div
               className="anyQueryapp"
               onClick={() => {
                 openContact();
               }}
             >
               Any Query?
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

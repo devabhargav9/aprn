@@ -54,14 +54,14 @@ const DevopsService = () => {
               Get in Touch now{" "}
               <img src={arrow} alt="arrow" className="arrowapp" />
             </div>
-            <div
+            {/* <div
               className="anyQueryapp"
               onClick={() => {
                 openContact();
               }}
             >
               Any Query?
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
