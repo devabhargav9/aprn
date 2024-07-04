@@ -774,7 +774,58 @@ export const aboutUsServicesData = [
   },
 ];
 
-export const appScrollData = [scroll1, scroll2, scroll3, scroll4, scroll5];
-export const cloudScrollData = [cscroll1, cscroll2, cscroll3, cscroll4];
-export const devopsScrollData = [dscroll1];
-export const ecomScrollData = [escroll1];
+const scroll1I = {
+  icon: scroll1,
+  redirectUrl: "/caseStudies/balance-app",
+};
+
+const scroll2I = {
+  icon: scroll2,
+  redirectUrl: "/caseStudies/carpool",
+};
+
+const scroll3I = {
+  icon: scroll3,
+  redirectUrl: "/caseStudies/kc-overseas",
+};
+
+const scroll4I = {
+  icon: scroll4,
+  redirectUrl: "/caseStudies/mayBank",
+};
+
+const scroll5I = {
+  icon: scroll5,
+  redirectUrl: "/caseStudies/malaysia-airlines",
+};
+
+const cscroll1I = {
+  icon: cscroll1,
+  redirectUrl: "/caseStudies/appModern2-cs",
+};
+
+
+const cscroll3I = {
+  icon: cscroll3,
+  redirectUrl: "/caseStudies/healthCheck-cs",
+};  
+
+const cscroll4I = {
+  icon: cscroll4,
+  redirectUrl: "/caseStudies/cloud-cs",
+};
+
+const escroll1I = {
+  icon: escroll1,
+  redirectUrl: "/caseStudies/appModern2-cs",
+};
+
+const dscroll1I = {
+  icon: dscroll1,
+  redirectUrl: "/caseStudies/devops-appModernization",
+};
+
+export const appScrollData = [scroll1I, scroll2I, scroll3I, scroll4I, scroll5I];
+export const cloudScrollData = [cscroll1I, cscroll3I, cscroll4I];
+export const devopsScrollData = [dscroll1I];
+export const ecomScrollData = [escroll1I];

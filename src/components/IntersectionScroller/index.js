@@ -43,7 +43,7 @@ const ScrollableComponent = ({ data, setScrolling }) => {
       <>
         {data.map((img, index) => (
           <figure key={index}>
-            <img src={img} alt={`Image ${index}`} />
+            <img src={img.icon} alt={`Image ${index}`} onClick={() => {window.location.href = img.redirectUrl}} style={{cursor: 'pointer'}}/>
           </figure>
         ))}
         <figure>

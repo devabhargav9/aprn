@@ -110,7 +110,7 @@ const Ecom = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <ScrollableComponent data={ecomScrollData} />
+      <ScrollableComponent data={ecomScrollData} setScrolling={() => {}}/>
 
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}
