@@ -33,7 +33,7 @@ const DigitalAnalytics = () => {
         style={{ backgroundImage: `url(${digitalAnalytics})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Data Research Dashboards</div>
+          <div className="buildText">Data. Research. Dashboards</div>
           <div className="textOneapp">
             Leveraging <span className="textTwoapp">Data</span> to take <br />
             <span className="textTwoapp">Future</span> Decisions

@@ -34,7 +34,7 @@ const Ecom = () => {
         style={{ backgroundImage: `url(${ecomImage})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Customers Marketing Experience</div>
+          <div className="buildText">Customers. Marketing. Experience</div>
           <div className="textOneapp">
             Connecting <span style={{ color: "#002699" }}>Consumers, </span>
             <br />

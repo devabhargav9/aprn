@@ -33,7 +33,7 @@ const DevTeams = () => {
         style={{ backgroundImage: `url(${itSquad})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Assess Deploy Excel</div>
+          <div className="buildText">Assess. Deploy. Excel</div>
           <div className="textOneapp">
             Exceeding expectations <br />
             by <span style={{ color: "#002699" }}>Delivering Value </span>

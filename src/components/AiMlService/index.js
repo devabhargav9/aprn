@@ -33,10 +33,10 @@ const AIML = () => {
         style={{ backgroundImage: `url(${aimlPage})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Intelligence Information Future</div>
+          <div className="buildText">Intelligence. Information. Future</div>
           <div className="textOneapp">
             Dwelling into the Future <br />
-            with
+            with{" "}
             <span style={{ color: "#002699" }}>Generative AI </span>
           </div>
           <div className="subTextapp">Transformative power of AI & ML</div>

@@ -126,24 +126,24 @@ const MalayAirlines = () => {
               <div className="ques">
                 1. What is this website for? <br />
                 <strong>
-                  99% had answered airlines/flight booking website
+                  <span style={{paddingLeft: '16px'}}>99% had answered airlines/flight booking website</span>
                 </strong>
               </div>
               <div className="ques">
                 2. What’s your first impression of the site? Describe it.
                 <br />
                 <strong>
-                  89% answered user-friendly and clean but the banner was
-                  distracting
+                <span style={{paddingLeft: '16px'}}>89% answered user-friendly and clean but the banner was
+                  distracting</span>
                 </strong>
               </div>
               <div className="ques">
                 3. What did you like best/least about the design?
                 <br />
                 <strong>
-                  90% said the design was straight-forward and liked the
+                <span style={{paddingLeft: '16px'}}>90% said the design was straight-forward and liked the
                   sections while some <br />
-                  participants mentioned it’s too plain
+                  <span style={{paddingLeft: '16px'}}>participants mentioned it’s too plain</span></span>
                 </strong>
               </div>
             </div>

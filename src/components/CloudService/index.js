@@ -35,7 +35,7 @@ const CloudService = () => {
         style={{ backgroundImage: `url(${cloudImage})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Build, Test and Deploy</div>
+          <div className="buildText">Build. Test. Deploy</div>
           <div className="textOneapp">
             Drive Growth and <br />
             Efficiency with Our <br />

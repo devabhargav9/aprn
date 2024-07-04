@@ -34,7 +34,7 @@ const DevopsService = () => {
         style={{ backgroundImage: `url(${devopsImg})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Automate Scale Modernize</div>
+          <div className="buildText">Automate. Scale. Modernize</div>
           <div className="textOneapp">
             Accelerate Your <br />
             Business With Our <br />

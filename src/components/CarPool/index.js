@@ -1,19 +1,21 @@
 import React, { useRef } from "react";
 import "./styles.css";
-import { kcData } from "../../data";
 import carpool1 from "../../assets/carpool1.png";
 import carpool2 from "../../assets/carpool2.png";
 import carpool3 from "../../assets/carpool3.png";
 import carpool4 from "../../assets/carpool4.png";
 import carpool5 from "../../assets/carpool5.png";
-import growthImg from "../../assets/growthImage.svg";
-import malayStats from "../../assets/malayStats.svg";
-import poolGrow from "../../assets/poolGrow.svg";
+import orangeDown from "../../assets/orangeDown.svg";
 import carpoolPink from "../../assets/carpoolPink.svg";
 
 import HeadNavBar from "../HeadNavBar";
 import Footer from "../Footer";
 import TopRated from "../TopRated";
+import redUp from "../../assets/redUp.svg";
+import greenTick from "../../assets/greenTick.svg";
+import growthBlue from "../../assets/growthBlue.svg";
+import growthYellow from "../../assets/growYellow.svg";
+
 
 const CarPool = () => {
   const servicesRef = useRef(null);
@@ -39,15 +41,16 @@ const CarPool = () => {
               Pooldo is carpooling IOS app which is based in <br />
               Bangalore, India
             </div>
-            <div className="poolStats">
-              <img className="poolGrow" src={poolGrow} />
-              <div>
-                <div className="poolGrowPercent">90%</div>
-                <div className="poolGrowSub">
-                  Client got 90% of noticeable growth
-                </div>
-              </div>
-            </div>
+            <TopRated
+              stat1={"90%"}
+              text1={"Higher conversion rates"}
+              icon1={growthBlue}
+              stat2={"45%"}
+              text2={"Faster Speed to market"}
+              icon2={orangeDown}
+              text3={"Enhance data analytics"}
+              icon3={redUp}
+            />
           </div>
           <div>
             <img className="carpool1" src={carpool1} />

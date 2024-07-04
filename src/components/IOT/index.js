@@ -32,7 +32,7 @@ const IOT = () => {
         style={{ backgroundImage: `url(${iotImage})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Innovate Accelerate Dominate</div>
+          <div className="buildText">Innovate. Accelerate. Dominate</div>
           <div className="textOneapp">
             Discover Our <span style={{ color: "#002699" }}>IOT</span>
             <br />

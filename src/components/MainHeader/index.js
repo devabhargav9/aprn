@@ -22,7 +22,7 @@ const MainHeader = () => {
           <br />
         </div>
         <div className="content2-5">
-          Agile | Secure  |  Reliable  |  Scalable
+          Agile  |  Secure  |  Reliable  |  Scalable
         </div>
         <div className="content3">
           We are empowered to help customers modernize their IT operations,{" "}

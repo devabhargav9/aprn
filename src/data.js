@@ -342,7 +342,7 @@ export const footerLinks = {
       name: "Malaysian Airlines",
       redirect_url: "/caseStudies/malaysia-airlines",
     },
-    { name: "MyBank App", redirect_url: "/caseStudies/maybank" },
+    { name: "MayBank App", redirect_url: "/caseStudies/maybank" },
     { name: "PoolDo", redirect_url: "/caseStudies/carpool" },
     {
       name: "DevOps Case study",
@@ -758,12 +758,12 @@ export const aboutUsServicesData = [
   },
   {
     name: "Scalability",
-    desc: "We help our clients ramp up fast. With our dynamic onboarding model we have the processes to onboard highly educated IT professionals at speed.",
+    desc: "We help our clients ramp up fast, supporting increased complexity and sophistication, integration with new technologies and accelerated speed to market.",
     logo: abtUs3,
   },
   {
     name: "Domain Expertise",
-    desc: "Fast-growth, and emphasis on professional development mean very low attrition rates.",
+    desc: "Embedding experts from key business areas into the cross-functional teams providing assurance and reliability.",
     logo: abtUs4,
   },
 

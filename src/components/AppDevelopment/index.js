@@ -43,7 +43,7 @@ const AppDevelopment = () => {
         style={{ backgroundImage: `url(${addDevPage})` }}
       >
         <div className="headTextSection">
-          <div className="buildText">Ideate Integrate Execute</div>
+          <div className="buildText">Ideate. Integrate. Execute</div>
           <div className="textOneapp">
             <span className="textTwoapp">Engineering Mobile</span> & <br />
             Progressive Web Apps <br />
