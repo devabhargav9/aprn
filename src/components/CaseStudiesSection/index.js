@@ -27,25 +27,30 @@ const CaseStudiesSection = () => {
         className="caseStudiesHead"
       />
       <div className="caseSudiesSection">
-        <img
-          src={balanceCS}
-          alt="Balance Case Study"
-          className="balanceImage"
-          onClick={redirectToCaseStudy("balance-app")}
-        ></img>
-        <img
-          src={malayCs}
-          alt="Malaysian airlines Case Study"
-          className="balanceImage"
-          onClick={redirectToCaseStudy("malaysia-airlines")}
-        ></img>
-
-        <img
-          src={kcCS}
-          alt="KC overseas Case Study"
-          className="balanceImage"
-          onClick={redirectToCaseStudy("kc-overseas")}
-        ></img>
+        <a href={"/caseStudies/balance-app"}>
+          <img
+            src={balanceCS}
+            alt="Balance Case Study"
+            className="balanceImage"
+            onClick={redirectToCaseStudy("balance-app")}
+          />
+        </a>
+        <a href={"/caseStudies/malaysia-airlines"}>
+          <img
+            src={malayCs}
+            alt="Malaysian airlines Case Study"
+            className="balanceImage"
+            onClick={redirectToCaseStudy("malaysia-airlines")}
+          ></img>
+        </a>
+        <a href={"/caseStudies/kc-overseas"}>
+          <img
+            src={kcCS}
+            alt="KC overseas Case Study"
+            className="balanceImage"
+            onClick={redirectToCaseStudy("kc-overseas")}
+          ></img>
+        </a>
         {/* <img
           src={mayBankCS}
           alt="KC overseas Case Study"
@@ -53,54 +58,68 @@ const CaseStudiesSection = () => {
           onClick={redirectToCaseStudy("maybank")}
         ></img> */}
       </div>
-      <div className="caseSudiesSection2">
-        <img
-          src={carPool}
-          alt="Carpool Case Study"
-          className="carPoolImg"
-          onClick={redirectToCaseStudy("carpool")}
-        ></img>
-        <img
-          src={mayBankCS}
-          alt="KC overseas Case Study"
-          className="mayImage"
-          onClick={redirectToCaseStudy("maybank")}
-        ></img>
 
-        <img
-          src={devopscs1}
-          alt="Devops Case study 1"
-          className="carPoolImg"
-          onClick={redirectToCaseStudy("devops-appModernization")}
-        ></img>
+      <div className="caseSudiesSection2">
+        <a href={"/caseStudies/carpool"}>
+          <img
+            src={carPool}
+            alt="Carpool Case Study"
+            className="carPoolImg"
+            onClick={redirectToCaseStudy("carpool")}
+          ></img>
+        </a>
+        <a href={"/caseStudies/maybank"}>
+          <img
+            src={mayBankCS}
+            alt="KC overseas Case Study"
+            className="mayImage"
+            onClick={redirectToCaseStudy("maybank")}
+          ></img>
+        </a>
+        <a href={"/caseStudies/devops-appModernization"}>
+          <img
+            src={devopscs1}
+            alt="Devops Case study 1"
+            className="carPoolImg"
+            onClick={redirectToCaseStudy("devops-appModernization")}
+          ></img>
+        </a>
       </div>
       <div className="caseSudiesSection2">
-        <img
-          src={devopscs2}
-          alt="Balance Case Study"
-          className="devopsCS2"
-          onClick={redirectToCaseStudy("appModern-cs")}
-        ></img>
-        <img
-          src={devopscs3}
-          alt="KC overseas Case Study"
-          className="devopsCS3"
-          onClick={redirectToCaseStudy("cloud-cs")}
-        ></img>
+        <a href={"/caseStudies/appModern-cs"}>
+          <img
+            src={devopscs2}
+            alt="Balance Case Study"
+            className="devopsCS2"
+            onClick={redirectToCaseStudy("appModern-cs")}
+          ></img>
+        </a>
+        <a href={"/caseStudies/cloud-cs"}>
+          <img
+            src={devopscs3}
+            alt="KC overseas Case Study"
+            className="devopsCS3"
+            onClick={redirectToCaseStudy("cloud-cs")}
+          ></img>
+        </a>
       </div>
       <div className="caseSudiesSection2">
-        <img
-          src={devopscs4}
-          alt="KC overseas Case Study"
-          className="devopsCS3"
-          onClick={redirectToCaseStudy("appModern2-cs")}
-        ></img>
-        <img
-          src={devopscs5}
-          alt="Balance Case Study"
-          className="devopsCS2"
-          onClick={redirectToCaseStudy("healthCheck-cs")}
-        ></img>
+        <a href={"/caseStudies/appModern2-cs"}>
+          <img
+            src={devopscs4}
+            alt="KC overseas Case Study"
+            className="devopsCS3"
+            onClick={redirectToCaseStudy("appModern2-cs")}
+          ></img>
+        </a>
+        <a href={"/caseStudies/healthCheck-cs"}>
+          <img
+            src={devopscs5}
+            alt="Balance Case Study"
+            className="devopsCS2"
+            onClick={redirectToCaseStudy("healthCheck-cs")}
+          ></img>
+        </a>
       </div>
     </div>
   );
