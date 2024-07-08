@@ -109,7 +109,7 @@ const CloudService = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <ScrollableComponent data={cloudScrollData} setScrolling={() => {}}/>
+      {/* <ScrollableComponent data={cloudScrollData} setScrolling={() => {}}/> */}
 
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}

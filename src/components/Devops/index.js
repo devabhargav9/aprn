@@ -110,7 +110,7 @@ const DevopsService = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <ScrollableComponent data={devopsScrollData} setScrolling={() => {}}/>
+      {/* <ScrollableComponent data={devopsScrollData} setScrolling={() => {}}/> */}
 
       {/* <Testinomials /> */}
       {/* <BlogsList /> */}

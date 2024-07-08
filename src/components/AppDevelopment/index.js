@@ -110,7 +110,7 @@ const AppDevelopment = () => {
         showCTA={false}
         extraHeader={"Why Choose us?"}
       />
-      <ScrollableComponent data={appScrollData} setScrolling={setScrolling} />
+      {/* <ScrollableComponent data={appScrollData} setScrolling={setScrolling} /> */}
 
       <Footer showAstronaut={true} scrollToServices={scrollToServices} />
     </div>
