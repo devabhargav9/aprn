@@ -39,8 +39,7 @@ const DevTeams = () => {
             by <span style={{ color: "#002699" }}>Delivering Value </span>
           </div>
           <div className="subTextapp">
-            Meticulously trained domain experts in dedicated to provide superior
-            development support
+          Seasoned domain experts with a proven track record dedicated to provide superior development support
           </div>
           <div className="buttonsContainerapp">
             <div
